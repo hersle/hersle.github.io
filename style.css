@@ -1,11 +1,19 @@
 body {
-	max-width: 60em;
+	max-width: 50em;
 	margin: 0 auto;
 	background-color: #dddddd;
 }
 
+p {
+	text-align: justify;
+}
 a {
 	color: blue;
+}
+img {
+	/* center images */
+	display: block;
+	margin: 0 auto;
 }
 
 header {

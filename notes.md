@@ -30,8 +30,8 @@ $$
 Variation with respect to metric
 $$
 \begin{align}
-\delta \Gamma^\lambda_{\mu\nu} &= \frac12 \delta g^{\lambda\rho} \overbrace{(\partial_\mu g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu})}^{2 g_{\sigma\rho} \Gamma^\sigma_{\mu\nu}}
-                                + \frac12        g^{\lambda\rho} (\partial_\mu \delta g_{\nu\rho} + \partial_\nu \delta g_{\mu\rho} - \partial_\rho \delta g_{\mu\nu}) & (\delta(AB) = A (\delta B) + (\delta A) B) \\
+\delta \Gamma^\lambda_{\mu\nu} &= \frac12 \delta g^{\lambda\rho} \overbrace{(\partial_\mu g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu})}^{2 g_{\sigma\rho} \Gamma^\sigma_{\mu\nu}} \\
+                               &+ \frac12        g^{\lambda\rho} (\partial_\mu \delta g_{\nu\rho} + \partial_\nu \delta g_{\mu\rho} - \partial_\rho \delta g_{\mu\nu}) & (\text{product rule}) \\
                                &= \frac12 g^{\lambda\rho} (\partial_\mu \delta g_{\nu\rho} + \partial_\nu \delta g_{\mu\rho} - \partial_\rho \delta g_{\mu\nu} - 2 \Gamma^\sigma_{\mu\nu} \delta g_{\rho\sigma}) & (\delta g^{\lambda\rho} = -g^{\alpha\lambda} g^{\beta\rho} \delta g_{\alpha\beta}) \\
                                &= \frac12 g^{\lambda\rho} (\partial_\mu \delta g_{\nu\rho} - \Gamma^\sigma_{\nu\mu} \delta g_{\sigma\rho} - \textcolor{red}{\Gamma^\sigma_{\rho\mu} \delta g_{\nu\sigma}} +{} \\
                                &\phantom{{}={}} \phantom{\frac12 g^{\lambda\rho} (} \partial_\nu \delta g_{\mu\rho} - \Gamma^\sigma_{\mu\nu} \delta g_{\sigma\rho} - \textcolor{blue}{\Gamma^\sigma_{\rho\nu} \delta g_{\mu\sigma}} -{} \\
