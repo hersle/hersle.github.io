@@ -1,0 +1,26 @@
+body {
+	max-width: 60em;
+	margin: 0 auto;
+	background-color: #dddddd;
+}
+
+a {
+	color: blue;
+}
+
+header {
+	text-align: center;
+}
+header > nav > ul > li {
+	display: inline;
+	padding: 1em;
+}
+
+ul {
+}
+
+#TOC {
+	background-color: #cccccc;
+	padding: 1em;
+	margin: 1em;
+}
