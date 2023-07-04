@@ -54,7 +54,12 @@ id="toc-covariant-derivative">Covariant derivative</a></li>
 id="toc-christoffel-symbols">Christoffel symbols</a></li>
 </ul></li>
 <li><a href="#jordan-brans-dicke-gravity"
-id="toc-jordan-brans-dicke-gravity">Jordan-Brans-Dicke gravity</a></li>
+id="toc-jordan-brans-dicke-gravity">Jordan-Brans-Dicke gravity</a>
+<ul>
+<li><a href="#action" id="toc-action">Action</a></li>
+<li><a href="#equations-of-motion"
+id="toc-equations-of-motion">Equations of motion</a></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="cheat-sheets">Cheat sheets</h1>
@@ -122,39 +127,87 @@ g_{\mu\nu})
 \end{align}
 \]</span></p>
 <h1 id="jordan-brans-dicke-gravity">Jordan-Brans-Dicke gravity</h1>
-<p>Natural units <span class="math inline">\(G = c = 1\)</span>.</p>
-<p>Action <span class="math display">\[
-S = \overbrace{\frac{1}{16\pi} \int d^4 x \sqrt{-g} \, (\phi R -
-\frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \partial_\nu
-\phi)}^{S_{BD}} + \overbrace{\int d^4x \sqrt{-g} \, \mathcal{L}_M}^{S_M}
-\]</span></p>
-<p>Variaction <span class="math display">\[
+<p>The Jordan-Brans-Dicke theory of gravity is a scalar-tensor modified
+gravity theory. Intuition: Newton’s constant replaced by a time-varying
+field, allowing it to vary from time to time (and place to place?).</p>
+<h2 id="action">Action</h2>
+<p>In natural units <span class="math inline">\(G = c = 1\)</span>, the
+action of Brans-Dicke theory coupled to matter is <span
+class="math display">\[
+S = \overbrace{\frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R -
+\frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu
+\phi\Big)}^{S_{BD}} + \overbrace{\int d^4x \sqrt{-g} \,
+\mathcal{L}_M}^{S_M} ,
+\]</span> where <span class="math inline">\(g_{\mu\nu}(x)\)</span> and
+<span class="math inline">\(g(x)\)</span> is the metric tensor and its
+determinant, <span class="math inline">\(\phi(x)\)</span> is a scalar
+field and <span class="math inline">\(\omega\)</span> is a constant
+parameter.</p>
+<h2 id="equations-of-motion">Equations of motion</h2>
+<p>The (classical) equations of motion for the metric and scalar field
+follows from the principle of least action <span
+class="math inline">\(\delta S = 0\)</span>.</p>
+<p>First, the variation of the Brans-Dicke action (variaction) with
+respect to the metric is <span class="math display">\[
 \begin{align}
-\delta S_{BD} &amp;= \frac{1}{16\pi} \int d^4 x \Big[\delta \sqrt{-g}
-\Big(\phi R - \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi
-\partial_\nu \phi\Big) + \sqrt{-g} \Big(\phi \delta R -
-\frac{\omega}{\phi} \delta g^{\mu\nu} \partial_\mu \phi \partial_\nu
-\phi\Big)\Big] \\
+\delta S_{BD} &amp;= \int d^4 x \frac{\delta S_{BD}}{\delta g^{\mu\nu}}
+\delta g^{\mu\nu} \\
+              &amp;= \frac{1}{16\pi} \int d^4 x
+\Big[\frac{\delta\sqrt{-g}}{\delta g^{\mu\nu}} \Big(\phi R -
+\frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu
+\phi\Big) + \sqrt{-g} \Big(\phi \frac{\delta R}{\delta g^{\mu\nu}} -
+\frac{\omega}{\phi} \frac{\delta g^{\alpha\beta}}{\delta g^{\mu\nu}}
+\partial_\alpha \phi \, \partial_\beta \phi\Big)\Big] \delta g^{\mu\nu}
+\\
               &amp;= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \Big[ \phi
-\Big(\delta R - \frac12 g_{\mu\nu} R \delta g^{\mu\nu}\Big) +
-\frac{\omega}{\phi} \Big(\frac12 g_{\alpha\beta} \delta g^{\alpha\beta}
-g^{\mu\nu} - \delta g^{\mu\nu}\Big) \Big] \\
+\Big(\frac{\delta R}{\delta g^{\mu\nu}} - \frac12 g_{\mu\nu} R \, \delta
+g^{\mu\nu}\Big) + \frac{\omega}{\phi} \Big(\frac12 g_{\alpha\beta}
+\delta g^{\alpha\beta} g^{\mu\nu} - \delta g^{\mu\nu}\Big) \partial_\mu
+\phi \, \partial_\nu \phi \Big] \\
               &amp;= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \Big[ \phi
 \Big(R_{\mu\nu} - \frac12 g_{\mu\nu} R - \nabla_\mu \nabla_\nu +
 g_{\mu\nu} \nabla^2 \Big) + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu}
-g^{\alpha\beta} \partial_\alpha \phi \partial_\beta \phi - \partial_\mu
-\phi \partial_\nu \phi \Big) \Big] \delta g^{\mu\nu} \\
+g^{\alpha\beta} \partial_\alpha \phi \, \partial_\beta \phi -
+\partial_\mu \phi \, \partial_\nu \phi \Big) \Big] \delta g^{\mu\nu} \\
               &amp;= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta
-g^{\mu\nu} \Big[ \phi G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi +
-g_{\mu\nu} \nabla^2 \phi \Big) + \frac{\omega}{\phi} \Big(\frac12
-g_{\mu\nu} (\partial \phi)^2 - \partial_\mu \phi \partial_\nu \phi \Big)
-\Big]
+g^{\mu\nu} \Big[ \phi \, G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi +
+g_{\mu\nu} \nabla^2 \phi + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu}
+(\partial \phi)^2 - \partial_\mu \phi \, \partial_\nu \phi \Big) \Big] .
 \end{align}
-\]</span> Variaction <span class="math display">\[
-\delta S_M = \frac{\delta S_M}{\delta g^{\mu\nu}} \delta g^{\mu\nu}
-           = \int d^4 x \underbrace{\frac{\delta (\sqrt{-g}
-\mathcal{L}_M)}{\delta g^{\mu\nu}}}_{-\frac12 \sqrt{-g} \, T_{\mu\nu}}
-\delta g^{\mu\nu}
+\]</span></p>
+<p>Second, the energy-momentum tensor is <span
+class="math inline">\(T_{\mu\nu} = -(\sqrt{-g}/2) \, (\delta S_M /
+\delta g^{\mu\nu})\)</span>, so the matter variaction is <span
+class="math display">\[
+\delta S_M = \int d^4 x \frac{\delta S_M}{\delta g^{\mu\nu}} \delta
+g^{\mu\nu}
+           = - \frac12 \int d^4 x \sqrt{-g} \, T_{\mu\nu}.
+\]</span></p>
+<p>Thus, the full variaction with respect to the metric is <span
+class="math display">\[
+\delta S = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta g^{\mu\nu}
+\Big[ \phi G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi + g_{\mu\nu} \nabla^2
+\phi + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} (\partial \phi)^2 -
+\partial_\mu \phi \partial_\nu \phi \Big) - 8 \pi \, T_{\mu\nu} \Big].
+\]</span></p>
+<p>For this to hold for any variation <span class="math inline">\(\delta
+g^{\mu\nu}\)</span> in the metric, it must satisfy <span
+class="math display">\[
+G_{\mu\nu} = \frac{8 \pi}{\phi} T_{\mu\nu} + \frac{\omega}{\phi^2}
+\Big(\partial_\mu \phi \partial_\nu \phi - \frac12 g_{\mu\nu} (\partial
+\phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu \phi -
+g_{\mu\nu} \nabla^2 \phi \Big).
+\]</span></p>
+<p>The variaction with respect to the scalar field is <span
+class="math display">\[
+\begin{align}
+\delta S &amp;= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \frac{\delta
+S}{\delta \phi} \delta \phi \\
+         &amp;= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, [R +
+\frac{\omega}{\phi^2} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi]
+\delta \phi \\
+         &amp;= \ldots
+\end{align}
 \]</span></p>
 </body>
 </html>

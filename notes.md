@@ -43,24 +43,61 @@ $$
 Jordan-Brans-Dicke gravity
 ==========================
 
-Natural units $G = c = 1$.
+The Jordan-Brans-Dicke theory of gravity is a scalar-tensor modified gravity theory.
+Intuition: Newton's constant replaced by a time-varying field, allowing it to vary from time to time (and place to place?).
 
 Action
-$$
-S = \overbrace{\frac{1}{16\pi} \int d^4 x \sqrt{-g} \, (\phi R - \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi)}^{S_{BD}} + \overbrace{\int d^4x \sqrt{-g} \, \mathcal{L}_M}^{S_M}
-$$
+------
 
-Variaction
+In natural units $G = c = 1$,
+the action of Brans-Dicke theory coupled to matter is
+$$
+S = \overbrace{\frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R - \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi\Big)}^{S_{BD}} + \overbrace{\int d^4x \sqrt{-g} \, \mathcal{L}_M}^{S_M} ,
+$$
+where $g_{\mu\nu}(x)$ and $g(x)$ is the metric tensor and its determinant,
+$\phi(x)$ is a scalar field
+and $\omega$ is a constant parameter.
+
+Equations of motion
+-----------------------------
+
+The (classical) equations of motion for the metric and scalar field
+follows from the principle of least action $\delta S = 0$.
+
+First, the variation of the Brans-Dicke action (variaction) with respect to the metric is
 $$
 \begin{align}
-\delta S_{BD} &= \frac{1}{16\pi} \int d^4 x \Big[\delta \sqrt{-g} \Big(\phi R - \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi\Big) + \sqrt{-g} \Big(\phi \delta R - \frac{\omega}{\phi} \delta g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi\Big)\Big] \\
-              &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \Big[ \phi \Big(\delta R - \frac12 g_{\mu\nu} R \delta g^{\mu\nu}\Big) + \frac{\omega}{\phi} \Big(\frac12 g_{\alpha\beta} \delta g^{\alpha\beta} g^{\mu\nu} - \delta g^{\mu\nu}\Big) \Big] \\
-              &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \Big[ \phi \Big(R_{\mu\nu} - \frac12 g_{\mu\nu} R - \nabla_\mu \nabla_\nu + g_{\mu\nu} \nabla^2 \Big) + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} g^{\alpha\beta} \partial_\alpha \phi \partial_\beta \phi - \partial_\mu \phi \partial_\nu \phi \Big) \Big] \delta g^{\mu\nu} \\
-              &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta g^{\mu\nu} \Big[ \phi G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi + g_{\mu\nu} \nabla^2 \phi \Big) + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} (\partial \phi)^2 - \partial_\mu \phi \partial_\nu \phi \Big) \Big]
+\delta S_{BD} &= \int d^4 x \frac{\delta S_{BD}}{\delta g^{\mu\nu}} \delta g^{\mu\nu} \\
+              &= \frac{1}{16\pi} \int d^4 x \Big[\frac{\delta\sqrt{-g}}{\delta g^{\mu\nu}} \Big(\phi R - \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi\Big) + \sqrt{-g} \Big(\phi \frac{\delta R}{\delta g^{\mu\nu}} - \frac{\omega}{\phi} \frac{\delta g^{\alpha\beta}}{\delta g^{\mu\nu}} \partial_\alpha \phi \, \partial_\beta \phi\Big)\Big] \delta g^{\mu\nu} \\
+              &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \Big[ \phi \Big(\frac{\delta R}{\delta g^{\mu\nu}} - \frac12 g_{\mu\nu} R \, \delta g^{\mu\nu}\Big) + \frac{\omega}{\phi} \Big(\frac12 g_{\alpha\beta} \delta g^{\alpha\beta} g^{\mu\nu} - \delta g^{\mu\nu}\Big) \partial_\mu \phi \, \partial_\nu \phi \Big] \\
+              &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \Big[ \phi \Big(R_{\mu\nu} - \frac12 g_{\mu\nu} R - \nabla_\mu \nabla_\nu + g_{\mu\nu} \nabla^2 \Big) + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} g^{\alpha\beta} \partial_\alpha \phi \, \partial_\beta \phi - \partial_\mu \phi \, \partial_\nu \phi \Big) \Big] \delta g^{\mu\nu} \\
+              &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta g^{\mu\nu} \Big[ \phi \, G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi + g_{\mu\nu} \nabla^2 \phi + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} (\partial \phi)^2 - \partial_\mu \phi \, \partial_\nu \phi \Big) \Big] .
 \end{align}
 $$
-Variaction
+
+Second, the energy-momentum tensor is $T_{\mu\nu} = -(\sqrt{-g}/2) \, (\delta S_M / \delta g^{\mu\nu})$,
+so the matter variaction is
 $$
-\delta S_M = \frac{\delta S_M}{\delta g^{\mu\nu}} \delta g^{\mu\nu}
-           = \int d^4 x \underbrace{\frac{\delta (\sqrt{-g} \mathcal{L}_M)}{\delta g^{\mu\nu}}}_{-\frac12 \sqrt{-g} \, T_{\mu\nu}} \delta g^{\mu\nu}
+\delta S_M = \int d^4 x \frac{\delta S_M}{\delta g^{\mu\nu}} \delta g^{\mu\nu}
+           = - \frac12 \int d^4 x \sqrt{-g} \, T_{\mu\nu}.
+$$
+
+Thus, the full variaction with respect to the metric is
+$$
+\delta S = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta g^{\mu\nu} \Big[ \phi G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi + g_{\mu\nu} \nabla^2 \phi + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} (\partial \phi)^2 - \partial_\mu \phi \partial_\nu \phi \Big) - 8 \pi \, T_{\mu\nu} \Big].
+$$
+
+For this to hold for any variation $\delta g^{\mu\nu}$ in the metric,
+it must satisfy
+$$
+G_{\mu\nu} = \frac{8 \pi}{\phi} T_{\mu\nu} + \frac{\omega}{\phi^2} \Big(\partial_\mu \phi \partial_\nu \phi - \frac12 g_{\mu\nu} (\partial \phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu \phi - g_{\mu\nu} \nabla^2 \phi \Big).
+$$
+
+The variaction with respect to the scalar field is
+$$
+\begin{align}
+\delta S &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \frac{\delta S}{\delta \phi} \delta \phi \\
+         &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, [R + \frac{\omega}{\phi^2} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi] \delta \phi \\
+         &= \ldots
+\end{align}
 $$
