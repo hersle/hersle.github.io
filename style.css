@@ -63,3 +63,8 @@ thead {
 th, td {
 	padding: 0.5em;
 }
+
+pre {
+	padding: 1em;
+	background-color: #eee;
+}

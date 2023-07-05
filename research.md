@@ -11,13 +11,15 @@ General formulas
 
 Covariant derivative
 --------------------
+The covariant derivative for a rank $(M,N)$ tensor $T$ is
 $$
 \begin{align}
 \nabla_\mu T^{\alpha_1 \ldots \alpha_M}_{\beta_1 \ldots \beta_N} &= \partial_\mu T^{\alpha_1 \ldots \alpha_M}_{\beta_1 \ldots \beta_N} \\
                                                                  &+ \Gamma^{\alpha_1}_{\sigma \mu} T^{\sigma \alpha_2 \ldots \alpha_M}_{\beta_1 \ldots \beta_N} + \ldots + \Gamma^{\alpha_M}_{\sigma\mu} T^{\alpha_1 \ldots \alpha_{M-1} \sigma}_{\beta_1 \ldots \beta_N} \\
-                                                                 &- \Gamma^\sigma_{\beta_1 \mu} T^{}_{\sigma \beta_2 \ldots \beta_N} - \ldots - \Gamma^\sigma_{\beta_N \mu} T^{}_{\beta_1 \ldots \beta_{M-1} \sigma}
+                                                                 &- \Gamma^\sigma_{\beta_1 \mu} T^{}_{\sigma \beta_2 \ldots \beta_N} - \ldots - \Gamma^\sigma_{\beta_N \mu} T^{}_{\beta_1 \ldots \beta_{M-1} \sigma}.
 \end{align}
 $$
+That is, for each ....
 
 Christoffel symbols
 -------------------
@@ -62,12 +64,12 @@ Intuition: Newton's constant replaced by a time-varying field, allowing it to va
 Action
 ------
 
-In natural units $G = c = 1$,
-the action of Brans-Dicke theory coupled to matter is
+The action of Brans-Dicke theory coupled to matter is
 $$
 S = \overbrace{\frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R - \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi\Big)}^{S_{BD}} + \overbrace{\int d^4x \sqrt{-g} \, \mathcal{L}_M}^{S_M} ,
 $$
-where $g_{\mu\nu}(x)$ and $g(x)$ is the metric tensor and its determinant,
+where $g_{\mu\nu}(x)$ is the metric tensor,
+$g(x) < 0$ is its determinant,
 $\phi(x)$ is a scalar field
 and $\omega$ is a constant parameter.
 

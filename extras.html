@@ -38,10 +38,16 @@
 <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Contents</h2>
 <ul>
-<li><a href="#projects" id="toc-projects">Projects</a></li>
+<li><a href="#leave-ssh-command-running-after-disconnecting"
+id="toc-leave-ssh-command-running-after-disconnecting">Leave SSH command
+running after disconnecting</a></li>
 </ul>
 </nav>
-<h1 id="projects">Projects</h1>
+<h1 id="leave-ssh-command-running-after-disconnecting">Leave SSH command
+running after disconnecting</h1>
+<pre><code>ssh remote-computer
+nohup ./long-running-command &amp;
+exit</code></pre>
 </main>
 <footer>
 	<b>Find me:</b>
