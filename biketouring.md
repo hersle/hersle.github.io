@@ -1,4 +1,2 @@
-% Bike touring
-
 Bike touring
 ============
