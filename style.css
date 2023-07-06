@@ -17,7 +17,12 @@ footer {
 	text-align: center;
 }
 main {
-	padding: 0 2em;
+	padding: 0 1em;
+}
+
+mjx-container {
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 p {
@@ -25,6 +30,9 @@ p {
 }
 a {
 	color: #06f;
+}
+a:hover {
+	background-color: #eee;
 }
 a.currentpage {
 	color: black;
@@ -62,6 +70,20 @@ thead {
 }
 th, td {
 	padding: 0.5em;
+}
+
+ul {
+	margin: 0;
+}
+
+input[type="checkbox"] {
+	width: 1.2em !important;
+	height: 1.2em !important;
+	/* transform: scale(1.5); */
+}
+
+ul.task-list li input[type="checkbox"] {
+	margin: 0 0.6em 0.2em -1.8em;
 }
 
 pre {

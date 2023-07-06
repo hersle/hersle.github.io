@@ -6,8 +6,8 @@ The equations on this page are written
 - in natural units $c = G = 1$ and
 - with metric signature $(-,+,+,+)$.
 
-General formulas
-================
+Manifold calculus (?)
+=====================
 
 Covariant derivative
 --------------------
@@ -30,6 +30,9 @@ Assuming torsion-free $\Gamma^\lambda_{\mu\nu} = \Gamma^\lambda_{\nu\mu}$ (symme
 $$
 \Gamma^\lambda_{\mu\nu} = \frac12 g^{\lambda \rho} (\partial_\mu g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu})
 $$
+
+Variational manifold calculus (?)
+=================================
 
 Variation of Christoffel symbols
 --------------------------------
@@ -55,6 +58,50 @@ Variation of Ricci tensor
 Variation of Ricci scalar (Palatini identity)
 -------------------------
 
+Principle of least action
+=========================
+
+$$
+\delta S = 0
+$$
+
+Euler-Lagrange equation
+-----------------------
+
+(TODO: define $S[\phi, \nabla_\mu \phi]$ !)
+The variaction of a general action $S[\phi, \partial_\mu \phi] = \int d^4 x \sqrt{-g(x)} \, \mathcal{L}(\phi, \partial_\mu \phi)$ with a scalar field $\phi(x)$ is
+$$
+\begin{align}
+\delta s &= \int d^4 x \bigg[ \frac{\delta (\sqrt{-g} \, \mathcal{L})}{\delta \phi} \delta\phi + \frac{\delta (\sqrt{-g} \, \mathcal{L})}{\delta (\partial_\mu \phi)} \overbrace{\delta (\partial_\mu \phi)}^{\partial_\mu (\delta \phi)} \bigg] & (\text{chain rule})\\
+         &= \int d^4 x \bigg[ \frac{\delta (\sqrt{-g} \, \mathcal{L})}{\delta \phi} - \partial_\mu \bigg( \frac{\delta (\sqrt{-g} \, \mathcal{L})}{\delta (\partial_\mu \phi)} \bigg) \bigg] \delta\phi & (\text{by parts, no variation on boundary}) . \\
+\end{align}
+$$
+To satisfy the [principle of least action](#principle-of-least-action) for any variation $\delta\phi$ in the field, it must satisfy the Euler-Lagrange equation
+$$
+\frac{\partial (\sqrt{-g} \, \mathcal{L})}{\partial \phi} - \partial_\mu \bigg( \frac{\partial (\sqrt{-g} \, \mathcal{L})}{\partial (\partial_\mu \phi)} \bigg) = 0
+\qquad
+\bigg( \frac{\delta}{\delta\phi} = \frac{\partial}{\partial\phi} \bigg).
+$$
+From the identity $\log g = \mathrm{tr} \log g$ and
+the [Christoffel symbols'](#christoffel-symbols) concetenation $\Gamma^\alpha_{\mu\alpha} = g^{\alpha\beta} \partial_\mu g_{\alpha\beta} / 2$,
+we have
+$$
+\frac{\partial_\mu g}{g} = \mathrm{tr} \big(g^{-1}\partial_\mu g\big) = g^{\alpha\beta} \partial_\mu g_{\alpha\beta} = 2 \Gamma^\alpha_{\mu\alpha},
+$$
+so $\partial_\mu \sqrt{-g} = -\partial_\mu g / 2 \sqrt{-g} = \sqrt{-g} \, \Gamma^\alpha_{\mu\alpha}$.
+For metric determinants $g$ that are independent of the field, applying the product rule to the second term in the Euler-Lagrange equation yields
+$$
+\sqrt{-g} \bigg[ \frac{\partial\mathcal{L}}{\partial\phi} - (\partial_\mu + \Gamma^\alpha_{\mu\alpha}) \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \bigg] = 0.
+$$
+Recognizing the covariant derivative,
+we find the equivalent covariant derivative Euler-Lagrange equation
+$$
+\frac{\partial\mathcal{L}}{\partial\phi} - \nabla_\mu \bigg( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \bigg) = 0.
+$$
+
+For even more details, see
+[correct Euler-Lagrange equation in curved spacetime](https://physics.stackexchange.com/a/723865/299916).
+
 Jordan-Brans-Dicke gravity
 ==========================
 
@@ -64,20 +111,21 @@ Intuition: Newton's constant replaced by a time-varying field, allowing it to va
 Action
 ------
 
-The action of Brans-Dicke theory coupled to matter is
+The total action of Brans-Dicke theory coupled to matter is
 $$
-S = \overbrace{\frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R - \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi\Big)}^{S_{BD}} + \overbrace{\int d^4x \sqrt{-g} \, \mathcal{L}_M}^{S_M} ,
+S = S_{BD} + S_M = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R - \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi\Big) + \int d^4x \sqrt{-g} \, \mathcal{L}_M ,
 $$
 where $g_{\mu\nu}(x)$ is the metric tensor,
 $g(x) < 0$ is its determinant,
-$\phi(x)$ is a scalar field
-and $\omega$ is a constant parameter.
+$\phi(x)$ is a scalar field,
+$\omega$ is a constant parameter
+and $\partial_\mu \phi = \nabla_\mu \phi$ coincides for the scalar field.
 
 Equations of motion
 -----------------------------
 
 The (classical) equations of motion for the metric and scalar field
-follows from the principle of least action $\delta S = 0$.
+follows from the [principle of least action](#principle-of-least-action).
 
 First, the variation of the Brans-Dicke action (variaction) with respect to the metric is
 $$
@@ -99,20 +147,31 @@ $$
 
 Thus, the full variaction with respect to the metric is
 $$
-\delta S = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta g^{\mu\nu} \Big[ \phi G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi + g_{\mu\nu} \nabla^2 \phi + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} (\partial \phi)^2 - \partial_\mu \phi \partial_\nu \phi \Big) - 8 \pi \, T_{\mu\nu} \Big].
+\delta S = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta g^{\mu\nu} \Big[ \phi G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi + g_{\mu\nu} \nabla^2 \phi + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} (\partial \phi)^2 - \partial_\mu \phi \, \partial_\nu \phi \Big) - 8 \pi \, T_{\mu\nu} \Big].
 $$
 
-For this to hold for any variation $\delta g^{\mu\nu}$ in the metric,
+For this to hold for any variation $\delta g^{\mu\nu}$ of the metric,
 it must satisfy
 $$
-G_{\mu\nu} = \frac{8 \pi}{\phi} T_{\mu\nu} + \frac{\omega}{\phi^2} \Big(\partial_\mu \phi \partial_\nu \phi - \frac12 g_{\mu\nu} (\partial \phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu \phi - g_{\mu\nu} \nabla^2 \phi \Big).
+G_{\mu\nu} = \frac{8 \pi}{\phi} T_{\mu\nu} + \frac{\omega}{\phi^2} \Big(\partial_\mu \phi \, \partial_\nu \phi - \frac12 g_{\mu\nu} (\partial \phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu \phi - g_{\mu\nu} \nabla^2 \phi \Big).
 $$
 
-The variaction with respect to the scalar field is
+The equation of motion for the scalar field $\phi$ is easier to get from the [Euler-Lagrange equation](#euler-lagrange-equation)
+with $\mathcal{L} = \mathcal{L}_{BD} = \phi R - (\omega / \phi) g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi$ is the Lagrangian density without $\sqrt{-g}$ ($\mathcal{L}_M$ is independent of $\phi$ and does not contribute).
+As $\partial_\mu \phi = \nabla_\mu \phi$, this gives
 $$
 \begin{align}
-\delta S &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \frac{\delta S}{\delta \phi} \delta \phi \\
-         &= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, [R + \frac{\omega}{\phi^2} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi] \delta \phi \\
-         &= \ldots
+0 &= R + \frac{\omega}{\phi^2} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi - \nabla_\mu \Big(\frac{\omega}{\phi} g^{\mu\nu} \partial_\nu \phi\Big) \\
+  &= R + \frac{\omega}{\phi^2} (\partial \phi)^2 - \Big(-\frac{\omega}{\phi^2} \nabla_\mu \phi \, \partial^\mu \phi + \frac{\omega}{\phi} \nabla_\mu \phi \, \partial^\mu \phi \Big) \\
+  &= R + 2 \frac{\omega}{\phi^2} (\partial \phi)^2 - \frac{\omega}{\phi} \partial^2 \phi .
 \end{align}
 $$
+To eliminate $R$,
+we use that $G^\mu_{\phantom{\mu}\mu} = R^\mu_{\phantom{\mu}\mu} - R \, g^\mu_{\phantom{\mu}\mu}/2 = R - 2R = -R$
+and take the trace of the field equations
+$$
+-R = \frac{8\pi}{\phi} T - \frac{\omega}{\phi^2} (\partial \phi)^2 - \frac{3}{\phi} \nabla^2 \phi .
+$$
+
+Have $\nabla \phi = \partial \phi$, but is $\nabla^2 \phi = \partial^2 \phi$?
+Wouldn't we get an additional Christoffel symbol?

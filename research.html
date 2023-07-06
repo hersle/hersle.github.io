@@ -34,6 +34,7 @@
 			<li><a href="research.html" class="currentpage">Research</a></li>
 			<li><a href="biketouring.html">Bike touring</a></li>
 			<li><a href="extras.html">Extras</a></li>
+			<li><a href="thoughts.html">Thoughts</a></li>
 		</ul>
 	</nav>
 </header>
@@ -42,13 +43,18 @@
 <h2 id="toc-title">Contents</h2>
 <ul>
 <li><a href="#conventions" id="toc-conventions">Conventions</a></li>
-<li><a href="#general-formulas" id="toc-general-formulas">General
-formulas</a>
+<li><a href="#manifold-calculus" id="toc-manifold-calculus">Manifold
+calculus (?)</a>
 <ul>
 <li><a href="#covariant-derivative"
 id="toc-covariant-derivative">Covariant derivative</a></li>
 <li><a href="#christoffel-symbols"
 id="toc-christoffel-symbols">Christoffel symbols</a></li>
+</ul></li>
+<li><a href="#variational-manifold-calculus"
+id="toc-variational-manifold-calculus">Variational manifold calculus
+(?)</a>
+<ul>
 <li><a href="#variation-of-christoffel-symbols"
 id="toc-variation-of-christoffel-symbols">Variation of Christoffel
 symbols</a></li>
@@ -60,6 +66,12 @@ id="toc-variation-of-ricci-tensor">Variation of Ricci tensor</a></li>
 <li><a href="#variation-of-ricci-scalar-palatini-identity"
 id="toc-variation-of-ricci-scalar-palatini-identity">Variation of Ricci
 scalar (Palatini identity)</a></li>
+</ul></li>
+<li><a href="#principle-of-least-action"
+id="toc-principle-of-least-action">Principle of least action</a>
+<ul>
+<li><a href="#euler-lagrange-equation"
+id="toc-euler-lagrange-equation">Euler-Lagrange equation</a></li>
 </ul></li>
 <li><a href="#jordan-brans-dicke-gravity"
 id="toc-jordan-brans-dicke-gravity">Jordan-Brans-Dicke gravity</a>
@@ -78,7 +90,7 @@ and</li>
 <li>with metric signature <span
 class="math inline">\((-,+,+,+)\)</span>.</li>
 </ul>
-<h1 id="general-formulas">General formulas</h1>
+<h1 id="manifold-calculus">Manifold calculus (?)</h1>
 <h2 id="covariant-derivative">Covariant derivative</h2>
 <p>The covariant derivative for a rank <span
 class="math inline">\((M,N)\)</span> tensor <span
@@ -108,6 +120,8 @@ compatibility <span class="math inline">\(\nabla_\lambda g_{\mu\nu} =
 \Gamma^\lambda_{\mu\nu} = \frac12 g^{\lambda \rho} (\partial_\mu
 g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu})
 \]</span></p>
+<h1 id="variational-manifold-calculus">Variational manifold calculus
+(?)</h1>
 <h2 id="variation-of-christoffel-symbols">Variation of Christoffel
 symbols</h2>
 <p>Variation with respect to metric <span class="math display">\[
@@ -146,26 +160,84 @@ g_{\mu\nu})
 <h2 id="variation-of-ricci-tensor">Variation of Ricci tensor</h2>
 <h2 id="variation-of-ricci-scalar-palatini-identity">Variation of Ricci
 scalar (Palatini identity)</h2>
+<h1 id="principle-of-least-action">Principle of least action</h1>
+<p><span class="math display">\[
+\delta S = 0
+\]</span></p>
+<h2 id="euler-lagrange-equation">Euler-Lagrange equation</h2>
+<p>(TODO: define <span class="math inline">\(S[\phi, \nabla_\mu
+\phi]\)</span> !) The variaction of a general action <span
+class="math inline">\(S[\phi, \partial_\mu \phi] = \int d^4 x
+\sqrt{-g(x)} \, \mathcal{L}(\phi, \partial_\mu \phi)\)</span> with a
+scalar field <span class="math inline">\(\phi(x)\)</span> is <span
+class="math display">\[
+\begin{align}
+\delta s &amp;= \int d^4 x \bigg[ \frac{\delta (\sqrt{-g} \,
+\mathcal{L})}{\delta \phi} \delta\phi + \frac{\delta (\sqrt{-g} \,
+\mathcal{L})}{\delta (\partial_\mu \phi)} \overbrace{\delta
+(\partial_\mu \phi)}^{\partial_\mu (\delta \phi)} \bigg] &amp;
+(\text{chain rule})\\
+         &amp;= \int d^4 x \bigg[ \frac{\delta (\sqrt{-g} \,
+\mathcal{L})}{\delta \phi} - \partial_\mu \bigg( \frac{\delta (\sqrt{-g}
+\, \mathcal{L})}{\delta (\partial_\mu \phi)} \bigg) \bigg] \delta\phi
+&amp; (\text{by parts, no variation on boundary}) . \\
+\end{align}
+\]</span> To satisfy the <a href="#principle-of-least-action">principle
+of least action</a> for any variation <span
+class="math inline">\(\delta\phi\)</span> in the field, it must satisfy
+the Euler-Lagrange equation <span class="math display">\[
+\frac{\partial (\sqrt{-g} \, \mathcal{L})}{\partial \phi} - \partial_\mu
+\bigg( \frac{\partial (\sqrt{-g} \, \mathcal{L})}{\partial (\partial_\mu
+\phi)} \bigg) = 0
+\qquad
+\bigg( \frac{\delta}{\delta\phi} = \frac{\partial}{\partial\phi} \bigg).
+\]</span> From the identity <span class="math inline">\(\log g =
+\mathrm{tr} \log g\)</span> and the <a
+href="#christoffel-symbols">Christoffel symbols’</a> concetenation <span
+class="math inline">\(\Gamma^\alpha_{\mu\alpha} = g^{\alpha\beta}
+\partial_\mu g_{\alpha\beta} / 2\)</span>, we have <span
+class="math display">\[
+\frac{\partial_\mu g}{g} = \mathrm{tr} \big(g^{-1}\partial_\mu g\big) =
+g^{\alpha\beta} \partial_\mu g_{\alpha\beta} = 2
+\Gamma^\alpha_{\mu\alpha},
+\]</span> so <span class="math inline">\(\partial_\mu \sqrt{-g} =
+-\partial_\mu g / 2 \sqrt{-g} = \sqrt{-g} \,
+\Gamma^\alpha_{\mu\alpha}\)</span>. For metric determinants <span
+class="math inline">\(g\)</span> that are independent of the field,
+applying the product rule to the second term in the Euler-Lagrange
+equation yields <span class="math display">\[
+\sqrt{-g} \bigg[ \frac{\partial\mathcal{L}}{\partial\phi} -
+(\partial_\mu + \Gamma^\alpha_{\mu\alpha}) \frac{\partial
+\mathcal{L}}{\partial (\partial_\mu \phi)} \bigg] = 0.
+\]</span> Recognizing the covariant derivative, we find the equivalent
+covariant derivative Euler-Lagrange equation <span
+class="math display">\[
+\frac{\partial\mathcal{L}}{\partial\phi} - \nabla_\mu \bigg(
+\frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \bigg) = 0.
+\]</span></p>
+<p>For even more details, see <a
+href="https://physics.stackexchange.com/a/723865/299916">correct
+Euler-Lagrange equation in curved spacetime</a>.</p>
 <h1 id="jordan-brans-dicke-gravity">Jordan-Brans-Dicke gravity</h1>
 <p>The Jordan-Brans-Dicke theory of gravity is a scalar-tensor modified
 gravity theory. Intuition: Newton’s constant replaced by a time-varying
 field, allowing it to vary from time to time (and place to place?).</p>
 <h2 id="action">Action</h2>
-<p>The action of Brans-Dicke theory coupled to matter is <span
+<p>The total action of Brans-Dicke theory coupled to matter is <span
 class="math display">\[
-S = \overbrace{\frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R -
+S = S_{BD} + S_M = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R -
 \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu
-\phi\Big)}^{S_{BD}} + \overbrace{\int d^4x \sqrt{-g} \,
-\mathcal{L}_M}^{S_M} ,
+\phi\Big) + \int d^4x \sqrt{-g} \, \mathcal{L}_M ,
 \]</span> where <span class="math inline">\(g_{\mu\nu}(x)\)</span> is
 the metric tensor, <span class="math inline">\(g(x) &lt; 0\)</span> is
 its determinant, <span class="math inline">\(\phi(x)\)</span> is a
-scalar field and <span class="math inline">\(\omega\)</span> is a
-constant parameter.</p>
+scalar field, <span class="math inline">\(\omega\)</span> is a constant
+parameter and <span class="math inline">\(\partial_\mu \phi = \nabla_\mu
+\phi\)</span> coincides for the scalar field.</p>
 <h2 id="equations-of-motion">Equations of motion</h2>
 <p>The (classical) equations of motion for the metric and scalar field
-follows from the principle of least action <span
-class="math inline">\(\delta S = 0\)</span>.</p>
+follows from the <a href="#principle-of-least-action">principle of least
+action</a>.</p>
 <p>First, the variation of the Brans-Dicke action (variaction) with
 respect to the metric is <span class="math display">\[
 \begin{align}
@@ -207,27 +279,50 @@ class="math display">\[
 \delta S = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta g^{\mu\nu}
 \Big[ \phi G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi + g_{\mu\nu} \nabla^2
 \phi + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} (\partial \phi)^2 -
-\partial_\mu \phi \partial_\nu \phi \Big) - 8 \pi \, T_{\mu\nu} \Big].
+\partial_\mu \phi \, \partial_\nu \phi \Big) - 8 \pi \, T_{\mu\nu}
+\Big].
 \]</span></p>
 <p>For this to hold for any variation <span class="math inline">\(\delta
-g^{\mu\nu}\)</span> in the metric, it must satisfy <span
+g^{\mu\nu}\)</span> of the metric, it must satisfy <span
 class="math display">\[
 G_{\mu\nu} = \frac{8 \pi}{\phi} T_{\mu\nu} + \frac{\omega}{\phi^2}
-\Big(\partial_\mu \phi \partial_\nu \phi - \frac12 g_{\mu\nu} (\partial
-\phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu \phi -
-g_{\mu\nu} \nabla^2 \phi \Big).
+\Big(\partial_\mu \phi \, \partial_\nu \phi - \frac12 g_{\mu\nu}
+(\partial \phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu
+\phi - g_{\mu\nu} \nabla^2 \phi \Big).
 \]</span></p>
-<p>The variaction with respect to the scalar field is <span
-class="math display">\[
+<p>The equation of motion for the scalar field <span
+class="math inline">\(\phi\)</span> is easier to get from the <a
+href="#euler-lagrange-equation">Euler-Lagrange equation</a> with <span
+class="math inline">\(\mathcal{L} = \mathcal{L}_{BD} = \phi R - (\omega
+/ \phi) g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi\)</span> is
+the Lagrangian density without <span
+class="math inline">\(\sqrt{-g}\)</span> (<span
+class="math inline">\(\mathcal{L}_M\)</span> is independent of <span
+class="math inline">\(\phi\)</span> and does not contribute). As <span
+class="math inline">\(\partial_\mu \phi = \nabla_\mu \phi\)</span>, this
+gives <span class="math display">\[
 \begin{align}
-\delta S &amp;= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \frac{\delta
-S}{\delta \phi} \delta \phi \\
-         &amp;= \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, [R +
-\frac{\omega}{\phi^2} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi]
-\delta \phi \\
-         &amp;= \ldots
+0 &amp;= R + \frac{\omega}{\phi^2} g^{\mu\nu} \partial_\mu \phi \,
+\partial_\nu \phi - \nabla_\mu \Big(\frac{\omega}{\phi} g^{\mu\nu}
+\partial_\nu \phi\Big) \\
+  &amp;= R + \frac{\omega}{\phi^2} (\partial \phi)^2 -
+\Big(-\frac{\omega}{\phi^2} \nabla_\mu \phi \, \partial^\mu \phi +
+\frac{\omega}{\phi} \nabla_\mu \phi \, \partial^\mu \phi \Big) \\
+  &amp;= R + 2 \frac{\omega}{\phi^2} (\partial \phi)^2 -
+\frac{\omega}{\phi} \partial^2 \phi .
 \end{align}
+\]</span> To eliminate <span class="math inline">\(R\)</span>, we use
+that <span class="math inline">\(G^\mu_{\phantom{\mu}\mu} =
+R^\mu_{\phantom{\mu}\mu} - R \, g^\mu_{\phantom{\mu}\mu}/2 = R - 2R =
+-R\)</span> and take the trace of the field equations <span
+class="math display">\[
+-R = \frac{8\pi}{\phi} T - \frac{\omega}{\phi^2} (\partial \phi)^2 -
+\frac{3}{\phi} \nabla^2 \phi .
 \]</span></p>
+<p>Have <span class="math inline">\(\nabla \phi = \partial
+\phi\)</span>, but is <span class="math inline">\(\nabla^2 \phi =
+\partial^2 \phi\)</span>? Wouldn’t we get an additional Christoffel
+symbol?</p>
 </main>
 <footer>
 	<b>Find me:</b>
