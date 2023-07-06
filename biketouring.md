@@ -1,8 +1,6 @@
 Packing list
 ============
 
-Here is a list of what I consider bare minimum items for multi-day bike touring:
-
 Bike
 ----
 
@@ -112,7 +110,9 @@ Planning
 Bringing your bike on boats, trains, buses, ...
 ===============================================
 
-TODO
+TODO: pictures, what to be prepared for?
 
 Safety on the road
 ==================
+
+TODO: Road behavior
