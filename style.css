@@ -31,9 +31,6 @@ p {
 a {
 	color: #06f;
 }
-a:hover {
-	background-color: #eee;
-}
 a.currentpage {
 	color: black;
 	text-decoration: none;

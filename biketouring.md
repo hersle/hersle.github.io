@@ -6,7 +6,7 @@ Here is a list of what I consider bare minimum items for multi-day bike touring:
 Bike
 ----
 
-- [x] **Bike** (hybrid or touring bike for "normal" touring; road bikes for speed and light packing on paved roads; mountain bike for unpaved roads; gravel for something in-between)
+- [ ] **Bike** (hybrid or touring bike for "normal" touring; road bikes for speed and light packing on paved roads; mountain bike for unpaved roads; gravel for something in-between)
 - [ ] **Helmet** (otherwise you are a *fucking asshole*; invest in a [MIPS helmet](https://en.wikipedia.org/wiki/Multi-directional_Impact_Protection_System) if you value your head)
 - [ ] **Pump** ([Topeak Road Morph G](https://www.topeak.com/global/en/product/246-ROAD-MORPH-G) is compact with a gauge and small foot stand; never bring a [screw-on pump](https://ride.lezyne.com/products/pocket-drive) without a valve core tool!)
 - [ ] **Lock** (you probably spend most of the time in remote areas and on or very close to your bike, so a combination cable lock to deny opportunistic theft is sufficient)
@@ -57,7 +57,7 @@ Electronics
 
 - [ ] **Phone** ([OsmAnd](https://osmand.net/) is a *must* for offline maps, routing and locating toilets, water fountains, shelters, preferably using [BRouter](https://osmand.net/docs/user/navigation/routing/brouter/) for optimal routing; [Google Maps](https://www.google.com/maps) for commerical information, accurate opening hours and public transport information; ...)
 - [ ] **Power bank** (20 000 mAh lasts a few days; compatible with quick charging to make the most of breaks)
-- [ ] **Charger and cables** (compatible with quick charging to make the most of breaks)
+- [ ] **Charger and cables** (for all your devices; compatible with quick charging to make the most of breaks)
 
 Health
 ------
@@ -104,3 +104,15 @@ Documents
 
 Planning
 ========
+
+* [BRouter-Web](https://brouter.de/brouter-web) is the best routing engine (in my experience)
+* [EuroVelo cycling network](https://en.eurovelo.com/#routes-and-countries)
+* [European ferry connections](https://ec.europa.eu/maritimeaffairs/atlas/maritime_atlas/#theme=85:1)
+
+Bringing your bike on boats, trains, buses, ...
+===============================================
+
+TODO
+
+Safety on the road
+==================
