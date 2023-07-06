@@ -6,7 +6,7 @@ Here is a list of what I consider bare minimum items for multi-day bike touring:
 Bike
 ----
 
-- [ ] **Bike** (hybrid or touring bike for "normal" touring; road bikes for speed and light packing on paved roads; mountain bike for unpaved roads; gravel for something in-between)
+- [x] **Bike** (hybrid or touring bike for "normal" touring; road bikes for speed and light packing on paved roads; mountain bike for unpaved roads; gravel for something in-between)
 - [ ] **Helmet** (otherwise you are a *fucking asshole*; invest in a [MIPS helmet](https://en.wikipedia.org/wiki/Multi-directional_Impact_Protection_System) if you value your head)
 - [ ] **Pump** ([Topeak Road Morph G](https://www.topeak.com/global/en/product/246-ROAD-MORPH-G) is compact with a gauge and small foot stand; never bring a [screw-on pump](https://ride.lezyne.com/products/pocket-drive) without a valve core tool!)
 - [ ] **Lock** (you probably spend most of the time in remote areas and on or very close to your bike, so a combination cable lock to deny opportunistic theft is sufficient)
