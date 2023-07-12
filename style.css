@@ -1,5 +1,5 @@
 html {
-	background-color: #eee;
+	background-color: #fff;
 }
 
 body {
@@ -13,11 +13,11 @@ header {
 	margin-bottom: 1em;
 }
 footer {
-	padding: 1em;
+	padding: 0.5em;
 	text-align: center;
 }
 main {
-	padding: 0 1em;
+	padding: 0 0.5em;
 }
 
 mjx-container {
@@ -49,13 +49,18 @@ header > nav > ul {
 }
 header > nav > ul > li {
 	display: inline-block;
-	padding: 1em;
+	padding: 0.5em;
 	font-weight: bold;
 }
 
 #TOC {
-	background-color: #eee;
-	padding: 1em;
+	margin: 1em;
+	background-color: #ccc;
+	padding: 1.0em;
+}
+#TOC > h2 {
+	margin-top: 0.0em;
+	margin-bottom: 0.5em;
 }
 
 table {
@@ -70,6 +75,8 @@ th, td {
 }
 
 ul {
+	list-style-type: square;
+	padding-left: 2em;
 	margin: 0;
 }
 
@@ -84,6 +91,7 @@ ul.task-list li input[type="checkbox"] {
 }
 
 pre {
-	padding: 1em;
+	margin: 1em;
+	padding: 1.0em;
 	background-color: #eee;
 }

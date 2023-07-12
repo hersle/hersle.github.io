@@ -29,7 +29,9 @@ $$
 Assuming torsion-free $\Gamma^\lambda_{\mu\nu} = \Gamma^\lambda_{\nu\mu}$ (symmetric in lower indices) and metric compatibility $\nabla_\lambda g_{\mu\nu} = 0$):
 $$
 \Gamma^\lambda_{\mu\nu} = \frac12 g^{\lambda \rho} (\partial_\mu g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu})
+\tag{123}
 $$
+[(123)](#)
 
 Variational manifold calculus (?)
 =================================
@@ -68,20 +70,21 @@ $$
 Euler-Lagrange equation
 -----------------------
 
-(TODO: define $S[\phi, \nabla_\mu \phi]$ !)
-The variaction of a general action $S[\phi, \partial_\mu \phi] = \int d^4 x \sqrt{-g(x)} \, \mathcal{L}(\phi, \partial_\mu \phi)$ with a scalar field $\phi(x)$ is
+The variaction of a general action $S[\phi, \nabla_\mu \phi] = \int d^4 x \sqrt{-g(x)} \, \mathcal{L}(\phi, \nabla_\mu \phi)$ with a scalar field $\phi(x)$ is
 $$
 \begin{align}
-\delta s &= \int d^4 x \bigg[ \frac{\delta (\sqrt{-g} \, \mathcal{L})}{\delta \phi} \delta\phi + \frac{\delta (\sqrt{-g} \, \mathcal{L})}{\delta (\partial_\mu \phi)} \overbrace{\delta (\partial_\mu \phi)}^{\partial_\mu (\delta \phi)} \bigg] & (\text{chain rule})\\
-         &= \int d^4 x \bigg[ \frac{\delta (\sqrt{-g} \, \mathcal{L})}{\delta \phi} - \partial_\mu \bigg( \frac{\delta (\sqrt{-g} \, \mathcal{L})}{\delta (\partial_\mu \phi)} \bigg) \bigg] \delta\phi & (\text{by parts, no variation on boundary}) . \\
+\delta S &= \int d^4 x \sqrt{-g} \bigg[ \frac{\delta \mathcal{L}}{\delta \phi} \delta\phi + \frac{\delta \mathcal{L}}{\delta (\nabla_\mu \phi)} \delta (\nabla_\mu \phi) \bigg] & (\text{chain rule}) \\
+         &= \int d^4 x \sqrt{-g} \bigg[ \frac{\delta \mathcal{L}}{\delta \phi} \delta\phi + \frac{\delta \mathcal{L}}{\delta (\nabla_\mu \phi)} \nabla_\mu (\delta \phi) \bigg] & (\delta \nabla \phi = \nabla \delta \phi) \\
+         &= \int d^4 x \sqrt{-g} \bigg[ \frac{\delta \mathcal{L}}{\delta \phi} - \nabla_\mu \bigg( \frac{\delta \mathcal{L}}{\delta (\nabla_\mu \phi)} \bigg) \bigg] \delta\phi & (\text{by parts, no variation on boundary}) \\
+         &= \int d^4 x \sqrt{-g} \bigg[ \frac{\partial \mathcal{L}}{\partial \phi} - \nabla_\mu \bigg( \frac{\partial \mathcal{L}}{\partial (\nabla_\mu \phi)} \bigg) \bigg] \delta\phi & (\delta/\delta \phi = \partial/\partial \phi) , \\
 \end{align}
 $$
-To satisfy the [principle of least action](#principle-of-least-action) for any variation $\delta\phi$ in the field, it must satisfy the Euler-Lagrange equation
+so for the [principle of least action](#principle-of-least-action) to hold for any field variation $\delta\phi$,
+the field must satisfy the Euler-Lagrange equation
 $$
-\frac{\partial (\sqrt{-g} \, \mathcal{L})}{\partial \phi} - \partial_\mu \bigg( \frac{\partial (\sqrt{-g} \, \mathcal{L})}{\partial (\partial_\mu \phi)} \bigg) = 0
-\qquad
-\bigg( \frac{\delta}{\delta\phi} = \frac{\partial}{\partial\phi} \bigg).
+\frac{\partial \mathcal{L}}{\partial \phi} - \nabla_\mu \bigg( \frac{\partial \mathcal{L}}{\partial (\nabla_\mu \phi)} \bigg) = 0 .
 $$
+<!--
 From the identity $\log g = \mathrm{tr} \log g$ and
 the [Christoffel symbols'](#christoffel-symbols) concetenation $\Gamma^\alpha_{\mu\alpha} = g^{\alpha\beta} \partial_\mu g_{\alpha\beta} / 2$,
 we have
@@ -98,6 +101,7 @@ we find the equivalent covariant derivative Euler-Lagrange equation
 $$
 \frac{\partial\mathcal{L}}{\partial\phi} - \nabla_\mu \bigg( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \bigg) = 0.
 $$
+-->
 
 For even more details, see
 [correct Euler-Lagrange equation in curved spacetime](https://physics.stackexchange.com/a/723865/299916).
@@ -156,8 +160,9 @@ $$
 G_{\mu\nu} = \frac{8 \pi}{\phi} T_{\mu\nu} + \frac{\omega}{\phi^2} \Big(\partial_\mu \phi \, \partial_\nu \phi - \frac12 g_{\mu\nu} (\partial \phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu \phi - g_{\mu\nu} \nabla^2 \phi \Big).
 $$
 
-The equation of motion for the scalar field $\phi$ is easier to get from the [Euler-Lagrange equation](#euler-lagrange-equation)
-with $\mathcal{L} = \mathcal{L}_{BD} = \phi R - (\omega / \phi) g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi$ is the Lagrangian density without $\sqrt{-g}$ ($\mathcal{L}_M$ is independent of $\phi$ and does not contribute).
+(TODO: complete)
+The equation of motion for the scalar field $\phi$ is easier to get from the [Euler-Lagrange equation](#euler-lagrange-equation) with Lagrangian density
+$\mathcal{L} = \mathcal{L}_{BD} = \phi R - (\omega / \phi) g^{\mu\nu} \nabla_\mu \phi \, \nabla_\nu \phi$ is the Lagrangian density without $\sqrt{-g}$ ($\mathcal{L}_M$ is independent of $\phi$ and does not contribute).
 As $\partial_\mu \phi = \nabla_\mu \phi$, this gives
 $$
 \begin{align}

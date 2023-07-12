@@ -119,7 +119,8 @@ compatibility <span class="math inline">\(\nabla_\lambda g_{\mu\nu} =
 0\)</span>): <span class="math display">\[
 \Gamma^\lambda_{\mu\nu} = \frac12 g^{\lambda \rho} (\partial_\mu
 g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu})
-\]</span></p>
+\tag{123}
+\]</span> <a href="#">(123)</a></p>
 <h1 id="variational-manifold-calculus">Variational manifold calculus
 (?)</h1>
 <h2 id="variation-of-christoffel-symbols">Variation of Christoffel
@@ -165,56 +166,52 @@ scalar (Palatini identity)</h2>
 \delta S = 0
 \]</span></p>
 <h2 id="euler-lagrange-equation">Euler-Lagrange equation</h2>
-<p>(TODO: define <span class="math inline">\(S[\phi, \nabla_\mu
-\phi]\)</span> !) The variaction of a general action <span
-class="math inline">\(S[\phi, \partial_\mu \phi] = \int d^4 x
-\sqrt{-g(x)} \, \mathcal{L}(\phi, \partial_\mu \phi)\)</span> with a
-scalar field <span class="math inline">\(\phi(x)\)</span> is <span
-class="math display">\[
+<p>The variaction of a general action <span
+class="math inline">\(S[\phi, \nabla_\mu \phi] = \int d^4 x \sqrt{-g(x)}
+\, \mathcal{L}(\phi, \nabla_\mu \phi)\)</span> with a scalar field <span
+class="math inline">\(\phi(x)\)</span> is <span class="math display">\[
 \begin{align}
-\delta s &amp;= \int d^4 x \bigg[ \frac{\delta (\sqrt{-g} \,
-\mathcal{L})}{\delta \phi} \delta\phi + \frac{\delta (\sqrt{-g} \,
-\mathcal{L})}{\delta (\partial_\mu \phi)} \overbrace{\delta
-(\partial_\mu \phi)}^{\partial_\mu (\delta \phi)} \bigg] &amp;
-(\text{chain rule})\\
-         &amp;= \int d^4 x \bigg[ \frac{\delta (\sqrt{-g} \,
-\mathcal{L})}{\delta \phi} - \partial_\mu \bigg( \frac{\delta (\sqrt{-g}
-\, \mathcal{L})}{\delta (\partial_\mu \phi)} \bigg) \bigg] \delta\phi
-&amp; (\text{by parts, no variation on boundary}) . \\
+\delta S &amp;= \int d^4 x \sqrt{-g} \bigg[ \frac{\delta
+\mathcal{L}}{\delta \phi} \delta\phi + \frac{\delta \mathcal{L}}{\delta
+(\nabla_\mu \phi)} \delta (\nabla_\mu \phi) \bigg] &amp; (\text{chain
+rule}) \\
+         &amp;= \int d^4 x \sqrt{-g} \bigg[ \frac{\delta
+\mathcal{L}}{\delta \phi} \delta\phi + \frac{\delta \mathcal{L}}{\delta
+(\nabla_\mu \phi)} \nabla_\mu (\delta \phi) \bigg] &amp; (\delta \nabla
+\phi = \nabla \delta \phi) \\
+         &amp;= \int d^4 x \sqrt{-g} \bigg[ \frac{\delta
+\mathcal{L}}{\delta \phi} - \nabla_\mu \bigg( \frac{\delta
+\mathcal{L}}{\delta (\nabla_\mu \phi)} \bigg) \bigg] \delta\phi &amp;
+(\text{by parts, no variation on boundary}) \\
+         &amp;= \int d^4 x \sqrt{-g} \bigg[ \frac{\partial
+\mathcal{L}}{\partial \phi} - \nabla_\mu \bigg( \frac{\partial
+\mathcal{L}}{\partial (\nabla_\mu \phi)} \bigg) \bigg] \delta\phi &amp;
+(\delta/\delta \phi = \partial/\partial \phi) , \\
 \end{align}
-\]</span> To satisfy the <a href="#principle-of-least-action">principle
-of least action</a> for any variation <span
-class="math inline">\(\delta\phi\)</span> in the field, it must satisfy
-the Euler-Lagrange equation <span class="math display">\[
-\frac{\partial (\sqrt{-g} \, \mathcal{L})}{\partial \phi} - \partial_\mu
-\bigg( \frac{\partial (\sqrt{-g} \, \mathcal{L})}{\partial (\partial_\mu
-\phi)} \bigg) = 0
-\qquad
-\bigg( \frac{\delta}{\delta\phi} = \frac{\partial}{\partial\phi} \bigg).
-\]</span> From the identity <span class="math inline">\(\log g =
-\mathrm{tr} \log g\)</span> and the <a
-href="#christoffel-symbols">Christoffel symbols’</a> concetenation <span
-class="math inline">\(\Gamma^\alpha_{\mu\alpha} = g^{\alpha\beta}
-\partial_\mu g_{\alpha\beta} / 2\)</span>, we have <span
-class="math display">\[
-\frac{\partial_\mu g}{g} = \mathrm{tr} \big(g^{-1}\partial_\mu g\big) =
-g^{\alpha\beta} \partial_\mu g_{\alpha\beta} = 2
-\Gamma^\alpha_{\mu\alpha},
-\]</span> so <span class="math inline">\(\partial_\mu \sqrt{-g} =
--\partial_\mu g / 2 \sqrt{-g} = \sqrt{-g} \,
-\Gamma^\alpha_{\mu\alpha}\)</span>. For metric determinants <span
-class="math inline">\(g\)</span> that are independent of the field,
-applying the product rule to the second term in the Euler-Lagrange
-equation yields <span class="math display">\[
-\sqrt{-g} \bigg[ \frac{\partial\mathcal{L}}{\partial\phi} -
-(\partial_\mu + \Gamma^\alpha_{\mu\alpha}) \frac{\partial
-\mathcal{L}}{\partial (\partial_\mu \phi)} \bigg] = 0.
-\]</span> Recognizing the covariant derivative, we find the equivalent
-covariant derivative Euler-Lagrange equation <span
-class="math display">\[
-\frac{\partial\mathcal{L}}{\partial\phi} - \nabla_\mu \bigg(
-\frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \bigg) = 0.
-\]</span></p>
+\]</span> so for the <a href="#principle-of-least-action">principle of
+least action</a> to hold for any field variation <span
+class="math inline">\(\delta\phi\)</span>, the field must satisfy the
+Euler-Lagrange equation <span class="math display">\[
+\frac{\partial \mathcal{L}}{\partial \phi} - \nabla_\mu \bigg(
+\frac{\partial \mathcal{L}}{\partial (\nabla_\mu \phi)} \bigg) = 0 .
+\]</span> <!--
+From the identity $\log g = \mathrm{tr} \log g$ and
+the [Christoffel symbols'](#christoffel-symbols) concetenation $\Gamma^\alpha_{\mu\alpha} = g^{\alpha\beta} \partial_\mu g_{\alpha\beta} / 2$,
+we have
+$$
+\frac{\partial_\mu g}{g} = \mathrm{tr} \big(g^{-1}\partial_\mu g\big) = g^{\alpha\beta} \partial_\mu g_{\alpha\beta} = 2 \Gamma^\alpha_{\mu\alpha},
+$$
+so $\partial_\mu \sqrt{-g} = -\partial_\mu g / 2 \sqrt{-g} = \sqrt{-g} \, \Gamma^\alpha_{\mu\alpha}$.
+For metric determinants $g$ that are independent of the field, applying the product rule to the second term in the Euler-Lagrange equation yields
+$$
+\sqrt{-g} \bigg[ \frac{\partial\mathcal{L}}{\partial\phi} - (\partial_\mu + \Gamma^\alpha_{\mu\alpha}) \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \bigg] = 0.
+$$
+Recognizing the covariant derivative,
+we find the equivalent covariant derivative Euler-Lagrange equation
+$$
+\frac{\partial\mathcal{L}}{\partial\phi} - \nabla_\mu \bigg( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \bigg) = 0.
+$$
+--></p>
 <p>For even more details, see <a
 href="https://physics.stackexchange.com/a/723865/299916">correct
 Euler-Lagrange equation in curved spacetime</a>.</p>
@@ -290,12 +287,12 @@ G_{\mu\nu} = \frac{8 \pi}{\phi} T_{\mu\nu} + \frac{\omega}{\phi^2}
 (\partial \phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu
 \phi - g_{\mu\nu} \nabla^2 \phi \Big).
 \]</span></p>
-<p>The equation of motion for the scalar field <span
+<p>(TODO: complete) The equation of motion for the scalar field <span
 class="math inline">\(\phi\)</span> is easier to get from the <a
-href="#euler-lagrange-equation">Euler-Lagrange equation</a> with <span
-class="math inline">\(\mathcal{L} = \mathcal{L}_{BD} = \phi R - (\omega
-/ \phi) g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi\)</span> is
-the Lagrangian density without <span
+href="#euler-lagrange-equation">Euler-Lagrange equation</a> with
+Lagrangian density <span class="math inline">\(\mathcal{L} =
+\mathcal{L}_{BD} = \phi R - (\omega / \phi) g^{\mu\nu} \nabla_\mu \phi
+\, \nabla_\nu \phi\)</span> is the Lagrangian density without <span
 class="math inline">\(\sqrt{-g}\)</span> (<span
 class="math inline">\(\mathcal{L}_M\)</span> is independent of <span
 class="math inline">\(\phi\)</span> and does not contribute). As <span
