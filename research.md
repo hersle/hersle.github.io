@@ -152,7 +152,7 @@ $$
 
 Thus, the full variaction with respect to the metric is
 $$
-\delta S = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta g^{\mu\nu} \Big[ \phi G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi + g_{\mu\nu} \nabla^2 \phi + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} (\partial \phi)^2 - \partial_\mu \phi \, \partial_\nu \phi \Big) - 8 \pi \, T_{\mu\nu} \Big].
+\delta S = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \delta g^{\mu\nu} \Big[ \phi \, G_{\mu\nu} - \nabla_\mu \nabla_\nu \phi + g_{\mu\nu} \nabla^2 \phi + \frac{\omega}{\phi} \Big(\frac12 g_{\mu\nu} (\partial \phi)^2 - \partial_\mu \phi \, \partial_\nu \phi \Big) - 8 \pi \, T_{\mu\nu} \Big].
 $$
 
 For this to hold for any variation $\delta g^{\mu\nu}$ of the metric,
@@ -182,4 +182,25 @@ Eliminating $R$ and using that $(\nabla \phi)^2 = -\phi \, \nabla^2 \phi$ by par
 we find the **scalar field equation**
 $$
 \nabla^2 \phi = \frac{8\pi}{3+2\omega} T .
+$$
+
+Background evolution (0th order perturbation theory solution)
+-------------------------------------------------------------
+
+At the background level, the universe is assumed to be homogeneous and isotropic,
+as described by the Friedmann-Lemaitre-Robertson-Walker metric
+$$
+ds^2 = -dt^2 + a^2(t) \bigg[ \frac{dr^2}{1-k r^2} + r^2 ( d\theta^2 + \sin^2\theta \, d\phi^2 ) \bigg],
+$$
+and filled with a perfect fluid with energy density $\rho$, pressure $P$ and rest-frame energy-momentum
+$$
+T^\mu_{\phantom{\mu}\nu} = \mathrm{diag} [-\rho, P, P, P] .
+$$
+
+* The metric yields the Einstein tensor component $G_{00} = 3 H^2 + 3 k^2/a^2$, where $H(t) = \dot{a}/a$ is the Hubble parameter and $\dot{\phantom{a}} = d/dt$.
+* The energy-momentum has the component $T_{00} = g_{00} T^0_{\phantom{0}0} = +\rho$.
+* The scalar field depends only on time due to homogeneity, so $\nabla_\mu \phi = \partial_\mu \phi = \partial_0 \phi \cdot \delta_\mu^{\phantom{\mu}0}$.
+The $\vphantom{G}_{00}$-component of the metric field equations then gives
+$$
+3H^2 + 3k^2/a^2 = \frac{8 \pi}{\phi} \rho + \ldots
 $$

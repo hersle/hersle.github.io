@@ -60,45 +60,49 @@ Electronics
 Health
 ------
 
-- [ ] First aid kit
-- [ ] Tooth brush and paste
-- [ ] Soap, shampoo and deodorant
-- [ ] Hand sanitizer
-- [ ] Towel
-- [ ] Toilet paper
-- [ ] Insect repellant
-- [ ] Sunscreen
+- [ ] **First aid kit** (maybe you can hang it on the driver's side of your bike)
+- [ ] **Tooth brush and paste**
+- [ ] **Soap, shampoo and deodorant** (bring small handluggage-friendly bottles to save space)
+- [ ] **Toilet paper** (for cleaning your ass, but also your kitchen equipment when you don't have access to water)
+- [ ] **Hand sanitizer** (for cleaning your hands)
+- [ ] **Towel** (for drying your body, a wet tent floor, your bike seat, etc; consider a fast-drying hiking towel to save space)
+- [ ] **Insect repellant** (it absolutely sucks taking brakes or climbing when flies and mosquitoes are rampant and you cannot outrun them)
+- [ ] **Sunscreen** (you may be exposed to the sun for long days)
 
 Clothes
 -------
 
-- [ ] Bike gloves (half and full)
-- [ ] Shorts (padded for multi-day trips) (for bathing)
-- [ ] Shirts
-- [ ] Shoes
-- [ ] Sandals?
-- [ ] Rain/wind jacket (pants?) (don't overdo it; you get wet from rain or sweat)
-- [ ] **Visibility vest** (unless very worthtunnels)
-- [ ] Glasses
-- [ ] Rain shoe cover
-- [ ] Laundry bag
-- [ ] Straps (to hang laundry on bike)
+- [ ] **Bike gloves** (half ones helps reduce sweat on handlebars; full ones also keeps your fingers warmer in cold, windy and wet conditions; padded ones particularly reduces pressure on to avoid ulnar nerve issues)
+- [ ] **Shorts** (also for bathing? unless you are very comfortable on your saddle, consider padded ones for comfort on multi-day trips)
+- [ ] **Shirts**
+- [ ] **Shoes** (I find (trail) running shoes to be a good balance between "casual" and "sporty", and they have a hard sole)
+- [ ] **Sandals** (nice for a change in breaks, around camp and to air your feet )
+- [ ] **Rain/wind jacket/pants** (don't overdo it; you get wet from rain or sweat)
+- [ ] **Rain shoe cover**
+- [ ] **Glasses** (otherwise, expect insects and particles to get in your eye; this can cause uncomfortable and even dangerous situations if it happens at the worst possible time)
+- [ ] **Laundry bag** (use a net to do your laundry in fresh water or laundromats, or even a bag that can be filled with water)
+- [ ] **Visibility vest** (very worthwhile in tunnels)
 
 Food
 ----
 
-- [ ] Food
-- [ ] Water
-- [ ] Cutlery, at least a good knife?
-- [ ] Camping stove and fuel (gas)?
+- [ ] **Food**
+- [ ] **Water**
+- [ ] **Cutlery** (at least a good knife)
+- [ ] **Camping stove and fuel (gas)**
 
 Documents
 ---------
 
-- [ ] Identification
-- [ ] Debit / credit card / cash
-- [ ] Medical card?
-- [ ] Paper map?
+- [ ] **Identification**
+- [ ] **Debit / credit card / cash**
+- [ ] **Medical card**
+- [ ] **Paper map**
+
+Personal items
+--------------
+
+- [ ] **Personal items** (don't forget!)
 
 Planning
 ========
@@ -114,5 +118,7 @@ TODO: pictures, what to be prepared for?
 
 Safety on the road
 ==================
+
+![Even Americans encourage cycling further to the left than the right edge of the lane](lane-positioning.png){width=100%}
 
 TODO: Road behavior
