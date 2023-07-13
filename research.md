@@ -70,7 +70,8 @@ $$
 Euler-Lagrange equation
 -----------------------
 
-The variaction of a general action $S[\phi, \nabla_\mu \phi] = \int d^4 x \sqrt{-g(x)} \, \mathcal{L}(\phi, \nabla_\mu \phi)$ with a scalar field $\phi(x)$ is
+The variaction of a general action $S[\phi, \nabla_\mu \phi] = \int d^4 x \sqrt{-g(x)} \, \mathcal{L}(\phi, \nabla_\mu \phi)$
+with a scalar field $\phi(x)$ is
 $$
 \begin{align}
 \delta S &= \int d^4 x \sqrt{-g} \bigg[ \frac{\delta \mathcal{L}}{\delta \phi} \delta\phi + \frac{\delta \mathcal{L}}{\delta (\nabla_\mu \phi)} \delta (\nabla_\mu \phi) \bigg] & (\text{chain rule}) \\
@@ -117,13 +118,13 @@ Action
 
 The total action of Brans-Dicke theory coupled to matter is
 $$
-S = S_{BD} + S_M = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R - \frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi\Big) + \int d^4x \sqrt{-g} \, \mathcal{L}_M ,
+S = S_{BD} + S_M = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R - \frac{\omega}{\phi} g^{\mu\nu} \nabla_\mu \phi \, \nabla_\nu \phi\Big) + \int d^4x \sqrt{-g} \, \mathcal{L}_M ,
 $$
 where $g_{\mu\nu}(x)$ is the metric tensor,
 $g(x) < 0$ is its determinant,
 $\phi(x)$ is a scalar field,
 $\omega$ is a constant parameter
-and $\partial_\mu \phi = \nabla_\mu \phi$ coincides for the scalar field.
+and $\nabla_\mu \phi = \partial_\mu \phi$ coincides for the scalar field.
 
 Equations of motion
 -----------------------------
@@ -155,28 +156,30 @@ $$
 $$
 
 For this to hold for any variation $\delta g^{\mu\nu}$ of the metric,
-it must satisfy
+it must satisfy the **metric field equation**
 $$
 G_{\mu\nu} = \frac{8 \pi}{\phi} T_{\mu\nu} + \frac{\omega}{\phi^2} \Big(\partial_\mu \phi \, \partial_\nu \phi - \frac12 g_{\mu\nu} (\partial \phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu \phi - g_{\mu\nu} \nabla^2 \phi \Big).
 $$
 
-(TODO: complete)
 The equation of motion for the scalar field $\phi$ is easier to get from the [Euler-Lagrange equation](#euler-lagrange-equation) with Lagrangian density
-$\mathcal{L} = \mathcal{L}_{BD} = \phi R - (\omega / \phi) g^{\mu\nu} \nabla_\mu \phi \, \nabla_\nu \phi$ is the Lagrangian density without $\sqrt{-g}$ ($\mathcal{L}_M$ is independent of $\phi$ and does not contribute).
-As $\partial_\mu \phi = \nabla_\mu \phi$, this gives
+$\mathcal{L} = \mathcal{L}_{BD} = \phi R - (\omega / \phi) g^{\mu\nu} \nabla_\mu \phi \, \nabla_\nu \phi$
+(the matter Lagrangian $\mathcal{L}_M$ is independent of $\phi$ and does not contribute):
 $$
 \begin{align}
-0 &= R + \frac{\omega}{\phi^2} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu \phi - \nabla_\mu \Big(\frac{\omega}{\phi} g^{\mu\nu} \partial_\nu \phi\Big) \\
-  &= R + \frac{\omega}{\phi^2} (\partial \phi)^2 - \Big(-\frac{\omega}{\phi^2} \nabla_\mu \phi \, \partial^\mu \phi + \frac{\omega}{\phi} \nabla_\mu \phi \, \partial^\mu \phi \Big) \\
-  &= R + 2 \frac{\omega}{\phi^2} (\partial \phi)^2 - \frac{\omega}{\phi} \partial^2 \phi .
+0 &= R + \frac{\omega}{\phi^2} g^{\mu\nu} \nabla_\mu \phi \, \nabla_\nu \phi - \nabla_\mu \Big(\frac{\omega}{\phi} g^{\mu\nu} \nabla_\nu \phi\Big) \\
+  &= R + \frac{\omega}{\phi^2} (\nabla \phi)^2 - \Big(-\frac{\omega}{\phi^2} \nabla_\mu \phi \, \nabla^\mu \phi + \frac{\omega}{\phi} \nabla^2 \phi \Big) \\
+  &= R + 2 \frac{\omega}{\phi^2} (\nabla \phi)^2 - \frac{\omega}{\phi} \nabla^2 \phi .
 \end{align}
 $$
-To eliminate $R$,
-we use that $G^\mu_{\phantom{\mu}\mu} = R^\mu_{\phantom{\mu}\mu} - R \, g^\mu_{\phantom{\mu}\mu}/2 = R - 2R = -R$
-and take the trace of the field equations
+We can eliminate $R$ by
+using that $G^\mu_{\phantom{\mu}\mu} = R^\mu_{\phantom{\mu}\mu} - R \, g^\mu_{\phantom{\mu}\mu}/2 = R - 2R = -R$,
+so the trace of the metric field equations is
 $$
--R = \frac{8\pi}{\phi} T - \frac{\omega}{\phi^2} (\partial \phi)^2 - \frac{3}{\phi} \nabla^2 \phi .
+-R = \frac{8\pi}{\phi} T - \frac{\omega}{\phi^2} (\nabla \phi)^2 - \frac{3}{\phi} \nabla^2 \phi .
 $$
 
-Have $\nabla \phi = \partial \phi$, but is $\nabla^2 \phi = \partial^2 \phi$?
-Wouldn't we get an additional Christoffel symbol?
+Eliminating $R$ and using that $(\nabla \phi)^2 = -\phi \, \nabla^2 \phi$ by parts under the action integral with no variation at the boundary,
+we find the **scalar field equation**
+$$
+\nabla^2 \phi = \frac{8\pi}{3+2\omega} T .
+$$

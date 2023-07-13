@@ -223,13 +223,13 @@ field, allowing it to vary from time to time (and place to place?).</p>
 <p>The total action of Brans-Dicke theory coupled to matter is <span
 class="math display">\[
 S = S_{BD} + S_M = \frac{1}{16\pi} \int d^4 x \sqrt{-g} \, \Big(\phi R -
-\frac{\omega}{\phi} g^{\mu\nu} \partial_\mu \phi \, \partial_\nu
-\phi\Big) + \int d^4x \sqrt{-g} \, \mathcal{L}_M ,
+\frac{\omega}{\phi} g^{\mu\nu} \nabla_\mu \phi \, \nabla_\nu \phi\Big) +
+\int d^4x \sqrt{-g} \, \mathcal{L}_M ,
 \]</span> where <span class="math inline">\(g_{\mu\nu}(x)\)</span> is
 the metric tensor, <span class="math inline">\(g(x) &lt; 0\)</span> is
 its determinant, <span class="math inline">\(\phi(x)\)</span> is a
 scalar field, <span class="math inline">\(\omega\)</span> is a constant
-parameter and <span class="math inline">\(\partial_\mu \phi = \nabla_\mu
+parameter and <span class="math inline">\(\nabla_\mu \phi = \partial_\mu
 \phi\)</span> coincides for the scalar field.</p>
 <h2 id="equations-of-motion">Equations of motion</h2>
 <p>The (classical) equations of motion for the metric and scalar field
@@ -280,46 +280,47 @@ class="math display">\[
 \Big].
 \]</span></p>
 <p>For this to hold for any variation <span class="math inline">\(\delta
-g^{\mu\nu}\)</span> of the metric, it must satisfy <span
-class="math display">\[
+g^{\mu\nu}\)</span> of the metric, it must satisfy the <strong>metric
+field equation</strong> <span class="math display">\[
 G_{\mu\nu} = \frac{8 \pi}{\phi} T_{\mu\nu} + \frac{\omega}{\phi^2}
 \Big(\partial_\mu \phi \, \partial_\nu \phi - \frac12 g_{\mu\nu}
 (\partial \phi)^2 \Big) + \frac{1}{\phi} \Big( \nabla_\mu \nabla_\nu
 \phi - g_{\mu\nu} \nabla^2 \phi \Big).
 \]</span></p>
-<p>(TODO: complete) The equation of motion for the scalar field <span
+<p>The equation of motion for the scalar field <span
 class="math inline">\(\phi\)</span> is easier to get from the <a
 href="#euler-lagrange-equation">Euler-Lagrange equation</a> with
 Lagrangian density <span class="math inline">\(\mathcal{L} =
 \mathcal{L}_{BD} = \phi R - (\omega / \phi) g^{\mu\nu} \nabla_\mu \phi
-\, \nabla_\nu \phi\)</span> is the Lagrangian density without <span
-class="math inline">\(\sqrt{-g}\)</span> (<span
+\, \nabla_\nu \phi\)</span> (the matter Lagrangian <span
 class="math inline">\(\mathcal{L}_M\)</span> is independent of <span
-class="math inline">\(\phi\)</span> and does not contribute). As <span
-class="math inline">\(\partial_\mu \phi = \nabla_\mu \phi\)</span>, this
-gives <span class="math display">\[
-\begin{align}
-0 &amp;= R + \frac{\omega}{\phi^2} g^{\mu\nu} \partial_\mu \phi \,
-\partial_\nu \phi - \nabla_\mu \Big(\frac{\omega}{\phi} g^{\mu\nu}
-\partial_\nu \phi\Big) \\
-  &amp;= R + \frac{\omega}{\phi^2} (\partial \phi)^2 -
-\Big(-\frac{\omega}{\phi^2} \nabla_\mu \phi \, \partial^\mu \phi +
-\frac{\omega}{\phi} \nabla_\mu \phi \, \partial^\mu \phi \Big) \\
-  &amp;= R + 2 \frac{\omega}{\phi^2} (\partial \phi)^2 -
-\frac{\omega}{\phi} \partial^2 \phi .
-\end{align}
-\]</span> To eliminate <span class="math inline">\(R\)</span>, we use
-that <span class="math inline">\(G^\mu_{\phantom{\mu}\mu} =
-R^\mu_{\phantom{\mu}\mu} - R \, g^\mu_{\phantom{\mu}\mu}/2 = R - 2R =
--R\)</span> and take the trace of the field equations <span
+class="math inline">\(\phi\)</span> and does not contribute): <span
 class="math display">\[
--R = \frac{8\pi}{\phi} T - \frac{\omega}{\phi^2} (\partial \phi)^2 -
+\begin{align}
+0 &amp;= R + \frac{\omega}{\phi^2} g^{\mu\nu} \nabla_\mu \phi \,
+\nabla_\nu \phi - \nabla_\mu \Big(\frac{\omega}{\phi} g^{\mu\nu}
+\nabla_\nu \phi\Big) \\
+  &amp;= R + \frac{\omega}{\phi^2} (\nabla \phi)^2 -
+\Big(-\frac{\omega}{\phi^2} \nabla_\mu \phi \, \nabla^\mu \phi +
+\frac{\omega}{\phi} \nabla^2 \phi \Big) \\
+  &amp;= R + 2 \frac{\omega}{\phi^2} (\nabla \phi)^2 -
+\frac{\omega}{\phi} \nabla^2 \phi .
+\end{align}
+\]</span> We can eliminate <span class="math inline">\(R\)</span> by
+using that <span class="math inline">\(G^\mu_{\phantom{\mu}\mu} =
+R^\mu_{\phantom{\mu}\mu} - R \, g^\mu_{\phantom{\mu}\mu}/2 = R - 2R =
+-R\)</span>, so the trace of the metric field equations is <span
+class="math display">\[
+-R = \frac{8\pi}{\phi} T - \frac{\omega}{\phi^2} (\nabla \phi)^2 -
 \frac{3}{\phi} \nabla^2 \phi .
 \]</span></p>
-<p>Have <span class="math inline">\(\nabla \phi = \partial
-\phi\)</span>, but is <span class="math inline">\(\nabla^2 \phi =
-\partial^2 \phi\)</span>? Wouldn’t we get an additional Christoffel
-symbol?</p>
+<p>Eliminating <span class="math inline">\(R\)</span> and using that
+<span class="math inline">\((\nabla \phi)^2 = -\phi \, \nabla^2
+\phi\)</span> by parts under the action integral with no variation at
+the boundary, we find the <strong>scalar field equation</strong> <span
+class="math display">\[
+\nabla^2 \phi = \frac{8\pi}{3+2\omega} T .
+\]</span></p>
 </main>
 <footer>
 	<b>Find me:</b>
