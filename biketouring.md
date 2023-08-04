@@ -9,12 +9,12 @@ Bike
 - [ ] **Pump** ([Topeak Road Morph G](https://www.topeak.com/global/en/product/246-ROAD-MORPH-G) is compact with a gauge and small foot stand; never bring a [screw-on pump](https://ride.lezyne.com/products/pocket-drive) without a valve core tool!)
 - [ ] **Lock** (you probably spend most of the time in remote areas and on or very close to your bike, so a combination cable lock to deny opportunistic theft is sufficient)
 - [ ] **Front and back lights** (essential for safety in the dark and in tunnels)
-- [ ] **Bottle cages** (the more, the better)
+- [ ] **Bottle cages** (the more, the better; most bikes have space for two in the frame triangle, and some have an additional one below the frame)
 - [ ] **Fenders** (makes riding in the rain comfortable; reduces frequency of maintenance)
 - [ ] **Phone mount?**
 
-Tools
------
+Tools and spare parts
+---------------------
 
 *MacGyver*
 
@@ -23,6 +23,7 @@ Tools
 - [ ] **Spare tube** (2+ if remote), **patch kit** and **tire levers**
 - [ ] **Oil** (except for one night stands?)
 - [ ] **Repair tape** (for fixing ripped tires, holes in sleeping pad and tent, ...)
+- [ ] **Chain link** (?)
 
 Storage
 -------
@@ -46,9 +47,9 @@ Sleep
 
 - [ ] **Tent** (the comfort of a 2-person tent is worth the weight, and makes it easy to unpack your panniers)
 - [ ] **Hammock and tarp** (less flexible, but an option if you are *absolutely sure* there are trees)
-- [ ] **Sleeping pad** (CCF or inflatable?)
-- [ ] **Sleeping bag** (down is lighter and more compact than synthetic ones, but must be kept dry!)
-- [ ] **Pillow**
+- [ ] **Sleeping pad** ([inflatable](https://www.exped.com/en/products/sleeping-mats/dura-5r) more comfort and packability, or [closed-cell foam (CCF)](https://www.thermarest.com/ie/sleeping-pads/fast-and-light/z-lite-sol-sleeping-pad/z-lite-sol.html) for more durability)
+- [ ] **Sleeping bag** (in a compression bag to save space; down is lighter and more compact than synthetic ones, but must be kept dry!)
+- [ ] **Pillow** ([inflatable]() or a buff covering a bag of clothes, or something similar)
 
 Electronics
 -----------
@@ -62,23 +63,28 @@ Health
 
 - [ ] **First aid kit** (maybe you can hang it on the driver's side of your bike)
 - [ ] **Tooth brush and paste**
-- [ ] **Soap, shampoo and deodorant** (bring small handluggage-friendly bottles to save space)
+- [ ] **Soap, shampoo and deodorant** (bring small handluggage-friendly bottles to save space; get something that works for the whole body?)
 - [ ] **Toilet paper** (for cleaning your ass, but also your kitchen equipment when you don't have access to water)
 - [ ] **Hand sanitizer** (for cleaning your hands)
+- [ ] **Baby wipes** (for some "quick" hygiene)
 - [ ] **Towel** (for drying your body, a wet tent floor, your bike seat, etc; consider a fast-drying hiking towel to save space)
 - [ ] **Insect repellant** (it absolutely sucks taking brakes or climbing when flies and mosquitoes are rampant and you cannot outrun them)
 - [ ] **Sunscreen** (you may be exposed to the sun for long days)
+- [ ] **Ear plugs and face mask** (to get good sleep!)
 
 Clothes
 -------
 
+*Technical clothing that you normally use on short trips may smell sour, get you cold and not be the best on longer trips!*
+
 - [ ] **Bike gloves** (half ones helps reduce sweat on handlebars; full ones also keeps your fingers warmer in cold, windy and wet conditions; padded ones particularly reduces pressure on to avoid ulnar nerve issues)
 - [ ] **Shorts** (also for bathing? unless you are very comfortable on your saddle, consider padded ones for comfort on multi-day trips)
-- [ ] **Shirts**
-- [ ] **Shoes** (I find (trail) running shoes to be a good balance between "casual" and "sporty", and they have a hard sole)
+- [ ] **Shirts** ("netting" transports moisture)
+- [ ] **Shoes** (I find (trail) running shoes (e.g. from Salomon) to be a good balance between "casual" and "sporty", and they have a hard sole)
 - [ ] **Sandals** (nice for a change in breaks, around camp and to air your feet )
 - [ ] **Rain/wind jacket/pants** (don't overdo it; you get wet from rain or sweat)
 - [ ] **Rain shoe cover**
+- [ ] **Buff** (multi-purpose)
 - [ ] **Glasses** (otherwise, expect insects and particles to get in your eye; this can cause uncomfortable and even dangerous situations if it happens at the worst possible time)
 - [ ] **Laundry bag** (use a net to do your laundry in fresh water or laundromats, or even a bag that can be filled with water)
 - [ ] **Visibility vest** (very worthwhile in tunnels)
@@ -86,10 +92,12 @@ Clothes
 Food
 ----
 
-- [ ] **Food**
-- [ ] **Water**
-- [ ] **Cutlery** (at least a good knife)
-- [ ] **Camping stove and fuel (gas)**
+- [ ] **Food** (and a food bag; buy along the way; use empty packaging as trash bags)
+- [ ] **Drinks** (one solid water, but also one free slot to make room for "varying" drinks like orange juice)
+- [ ] **Cutlery** ([good knife that can also cut bread](https://www.victorinox.com/us/en/Products/Cutlery/Paring-Knives/Swiss-Classic-Tomato-and-Table-Knife/p/6.7833), fork and a spoon)
+- [ ] **Plate/bowl/board** (may be combined?)
+- [ ] **Coffee cup** (a small foldable one)
+- [ ] **Camping stove and fuel (gas)** (much cheaper and cozier than buying dinners)
 
 Documents
 ---------
@@ -122,3 +130,15 @@ Safety on the road
 ![Even Americans encourage cycling further to the left than the right edge of the lane](lane-positioning.png){width=100%}
 
 TODO: Road behavior
+
+* Learn to [bike safely in car traffic](https://bicyclesafe.com/)
+
+Other resources
+===============
+
+* [Lars Erik Sira's blog](https://sirasverden.no/) and [advice](https://sirasverden.no/sykkelrad) for touring in Norway (in Norwegian).
+* [Position yourself appropriately in the lane](https://www.reddit.com/r/bikecommuting/comments/14uaogw/comment/jr6s30z/)
+* [ruter.dk](https://ruter.dk/) for official information about national and EuroVelo cycling routes in Denmark
+* [plohn.com](https://plohn.com/)
+* [Map of "bike kitchens"](http://www.heureux-cyclage.org/les-ateliers-dans-le-monde?lang=en)
+* [How To Find Campsites While Bike Touring In Europe](https://morris.cloud/campsites-touring-europe/)

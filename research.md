@@ -200,7 +200,32 @@ $$
 * The metric yields the Einstein tensor component $G_{00} = 3 H^2 + 3 k^2/a^2$, where $H(t) = \dot{a}/a$ is the Hubble parameter and $\dot{\phantom{a}} = d/dt$.
 * The energy-momentum has the component $T_{00} = g_{00} T^0_{\phantom{0}0} = +\rho$.
 * The scalar field depends only on time due to homogeneity, so $\nabla_\mu \phi = \partial_\mu \phi = \partial_0 \phi \cdot \delta_\mu^{\phantom{\mu}0}$.
+
 The $\vphantom{G}_{00}$-component of the metric field equations then gives
 $$
-3H^2 + 3k^2/a^2 = \frac{8 \pi}{\phi} \rho + \ldots
+3H^2 + 3 \frac{k}{a^2} = \frac{8 \pi}{\phi} \rho + \frac{\omega}{2} \frac{\dot{\phi}^2}{\phi^2} - 3H \frac{\dot\phi}{\phi}
+$$
+Reexpressing $\dot{\phi} = H \phi \, d \log \phi / d \log a$, we can collect all terms with $H$ on one side to find
+$$
+H^2 \Bigg[ 1 + \frac{d \log \phi}{d \log a} - \frac{\omega}{6} \bigg( \frac{d \log \phi}{d \log a}\bigg)^2 \Bigg] = \frac{8 \pi}{3 \phi} \rho - \frac{k}{a^2} .
+$$
+Defining the usual (effective) density parameters
+$\Omega_{r0} = \rho_{r0} / (3 H_0^2 / 8 \pi)$,
+$\Omega_{m0} = \rho_{m0} / (3 H_0^2 / 8 \pi)$,
+$\Omega_{\Lambda 0} = \rho_{\Lambda 0} / (3 H_0^2 / 8 \pi)$ and
+$\Omega_{k0} = -k/H_0^2$,
+we find the Friedmann equation
+$$
+E^2(a) = \bigg(\frac{H(a)}{H_0(a)}\bigg)^2 = \frac{1}{\phi} \cdot \frac{\Omega_{r0} a^{-4} + \Omega_{m0} a^{-3} + \phi \Omega_{k0} a^{-2} + \Omega_{\Lambda 0}}{1 + \frac{d \log \phi}{d \log a} - \frac{\omega}{6} \big( \frac{d \log \phi}{d \log a}\big)^2} .
+$$
+If we define the "phinalized" parameters
+$\tilde \Omega_{i0} = \Omega_{i0} / \phi_0$,
+except for curvature $\tilde \Omega_{k0} = \Omega_{k0}$,
+and introduce
+$$
+\tilde{\Omega}_{\phi0} = -\frac{d \log \phi}{d \log a} + \frac{\omega}{6} \bigg(\frac{d \log \phi}{d \log a}\bigg)^2 \, \Bigg|_{a=1}
+$$
+we find that $E^2(a=1)=1$ constrains the parameters by the modified closure condition
+$$
+1 = \tilde{\Omega}_{r0} + \tilde{\Omega}_{m0} + \tilde{\Omega}_{k0} + \tilde{\Omega}_{\Lambda 0} + \tilde{\Omega}_{\phi 0} .
 $$
