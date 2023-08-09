@@ -45,6 +45,22 @@ running after disconnecting</a></li>
 <li><a href="#infinite-number-of-email-adresses-from-one-gmail-address"
 id="toc-infinite-number-of-email-adresses-from-one-gmail-address">Infinite
 number of email-adresses from one Gmail address</a></li>
+<li><a href="#git-cheat-sheet" id="toc-git-cheat-sheet">Git cheat
+sheet</a>
+<ul>
+<li><a href="#initialize-repository"
+id="toc-initialize-repository">Initialize repository</a></li>
+<li><a href="#stage-changes" id="toc-stage-changes">Stage
+changes</a></li>
+<li><a href="#unstage-changes" id="toc-unstage-changes">Unstage
+changes</a></li>
+<li><a href="#commit-staged-changes"
+id="toc-commit-staged-changes">Commit staged changes</a></li>
+<li><a href="#branches" id="toc-branches">Branches</a></li>
+<li><a href="#track-pull-from-and-push-to-remote-repository"
+id="toc-track-pull-from-and-push-to-remote-repository">Track, pull from
+and push to remote repository</a></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="leave-ssh-command-running-after-disconnecting">Leave SSH command
@@ -61,6 +77,38 @@ recipient’s mailbox. Most sites where you register your email address
 <em>does</em> care, however. This trick is particularly useful for web
 stores where you get a one-time promotional code after registering,
 without needing to use a 10 min mail thing.</p>
+<h1 id="git-cheat-sheet">Git cheat sheet</h1>
+<p>Three stages of git (like a three-stage rocket): 1. Working area 2.
+Staging area 3. Commited changes</p>
+<h2 id="initialize-repository">Initialize repository</h2>
+<pre><code>cd folder/to/track/
+git init</code></pre>
+<h2 id="stage-changes">Stage changes</h2>
+<pre><code>git add         file/to/stage # stage  all changes in file
+git add --patch file/to/stage # stage some changes in file
+git add folder/to/stage/      # stage folder
+git add --patch               # stage some changes in already tracked files
+...</code></pre>
+<h2 id="unstage-changes">Unstage changes</h2>
+<pre><code>git reset                 # unstage all staged changes (leaving working directory
+git reset file/to/unstage # unstage all staged changes in file</code></pre>
+<h2 id="commit-staged-changes">Commit staged changes</h2>
+<pre><code>git commit -m &quot;Summary of changes&quot; # new commit
+git commit --amend                 # append to previous commit</code></pre>
+<h2 id="branches">Branches</h2>
+<pre><code>TODO</code></pre>
+<h2 id="track-pull-from-and-push-to-remote-repository">Track, pull from
+and push to remote repository</h2>
+<pre><code>git remote --verbose                  # list connections between local repo and remote repo
+git remote add remote_name remote_url # connect local repo with remote repo
+
+git pull remote_name branch_name      # download and merge changes on       a branch from   a remote repo
+git pull remote_name                  # download and merge changes on current branch from   a remote repo
+git pull                              # download and merge changes on current branch from the remote repo
+
+git push remote_name branch_name      #   upload           changes on       a branch   to   a remote repo
+git push remote_name                  #   upload           changes on current branch   to   a remote repo
+git push                              #   upload           changes on current branch   to the remote repo</code></pre>
 </main>
 <footer>
 	<b>Find me:</b>

@@ -135,10 +135,30 @@ TODO: Road behavior
 
 Other resources
 ===============
-
-* [Lars Erik Sira's blog](https://sirasverden.no/) and [advice](https://sirasverden.no/sykkelrad) for touring in Norway (in Norwegian).
 * [Position yourself appropriately in the lane](https://www.reddit.com/r/bikecommuting/comments/14uaogw/comment/jr6s30z/)
-* [ruter.dk](https://ruter.dk/) for official information about national and EuroVelo cycling routes in Denmark
-* [plohn.com](https://plohn.com/)
 * [Map of "bike kitchens"](http://www.heureux-cyclage.org/les-ateliers-dans-le-monde?lang=en)
 * [How To Find Campsites While Bike Touring In Europe](https://morris.cloud/campsites-touring-europe/)
+
+Routing services
+----------------
+(in order of personal preference)
+
+1. [Brouter-web](https://brouter.de/brouter-web/)
+2. [Garmin Connect](https://connect.garmin.com/)
+3. [Ride with GPS](https://ridewithgps.com/routes/new)
+4. [Google Maps](https://maps.google.com)
+
+🇩🇰 Denmark-specific
+---------------------
+* [ruter.dk](https://ruter.dk/) for official information about national and EuroVelo cycling routes in Denmark
+
+🇳🇴 Norway-specific
+--------------------
+* [Yr.no](https://www.yr.no/en) is the [most accurate weather forecasting service in Norway](https://www.yr.no/artikkel/yr.no-vs-storm.no-1.11009369).
+* [Cycletourer.co.uk's map of tunnels](https://www.cycletourer.co.uk/maps/tunnelmaplrge.shtml).
+* [Entur.no](https://entur.no/kart) is an official source for all public transport timetables, including buses, trains and ferries.
+* [SykkelNorge](https://sykkelnorge.no/)'s recommended tours up to around 1000 km.
+* [Norgeskart.no](https://norgeskart.no) has free and detailed official maps. 
+* [Lars Erik Sira's blog](https://sirasverden.no/) and [advice](https://sirasverden.no/sykkelrad) for touring in Norway (in Norwegian).
+* [plohn.com](https://plohn.com/)
+* [kartmannen.no](https://kartmannen.no/kartutskrift/) for printing Norwegian maps as PDFs.
