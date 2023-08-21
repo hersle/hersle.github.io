@@ -133,6 +133,8 @@ TODO: Road behavior
 
 * Learn to [bike safely in car traffic](https://bicyclesafe.com/)
 
+<iframe src="https://clips.twitch.tv/embed?clip=AssiduousTrappedNuggetsWoofer-Mt-83DHZhP9Z0yiI&parent=localhost&parent=hersle.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+
 Other resources
 ===============
 * [Position yourself appropriately in the lane](https://www.reddit.com/r/bikecommuting/comments/14uaogw/comment/jr6s30z/)

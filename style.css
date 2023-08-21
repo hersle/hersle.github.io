@@ -74,6 +74,11 @@ th, td {
 	padding: 0.5em;
 }
 
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
 ul {
 	list-style-type: square;
 	padding-left: 2em;
