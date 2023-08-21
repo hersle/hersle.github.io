@@ -1,9 +1,9 @@
 on: [push]
-  jobs: 
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v3
-        - run: |
-            apt-get install pandoc
-            ./build.sh
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          apt-get install pandoc
+          ./build.sh
