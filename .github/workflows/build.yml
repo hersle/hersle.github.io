@@ -3,7 +3,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: |
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
           sudo apt-get install pandoc
           ./build.sh
+      - name: Upload
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: '.' # upload entire repository
+      - name: Deploy
+        uses: actions/deploy-pages@v1
+      
