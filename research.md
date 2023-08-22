@@ -38,7 +38,7 @@ Variational manifold calculus (?)
 
 Variation of Christoffel symbols
 --------------------------------
-Variation with respect to metric
+Variation with respect to metric ([inspiration](https://physics.stackexchange.com/questions/462686/whats-the-variation-of-the-christoffel-symbols-with-respect-to-the-metric/503940#503940))
 $$
 \begin{align}
 \delta \Gamma^\lambda_{\mu\nu} &= \frac12 \delta g^{\lambda\rho} \overbrace{(\partial_\mu g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu})}^{2 g_{\sigma\rho} \Gamma^\sigma_{\mu\nu}} \\
@@ -110,7 +110,7 @@ For even more details, see
 Jordan-Brans-Dicke gravity
 ==========================
 
-The Jordan-Brans-Dicke theory of gravity is a scalar-tensor modified gravity theory.
+The Jordan-Brans-Dicke theory of gravity is a [scalar-tensor](https://en.wikipedia.org/wiki/Scalar%E2%80%93tensor_theory) modified gravity theory.
 Intuition: Newton's constant replaced by a time-varying field, allowing it to vary from time to time (and place to place?).
 
 Action
@@ -128,6 +128,8 @@ and $\nabla_\mu \phi = \partial_\mu \phi$ coincides for the scalar field.
 
 Equations of motion
 -----------------------------
+
+([inspiration](https://physics.stackexchange.com/questions/93157/variation-of-modified-einstein-hilbert-action/93184#93184))
 
 The (classical) equations of motion for the metric and scalar field
 follows from the [principle of least action](#principle-of-least-action).

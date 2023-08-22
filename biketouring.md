@@ -5,7 +5,7 @@ Bike
 ----
 
 - [ ] **Bike** (hybrid or touring bike for "normal" touring; road bikes for speed and light packing on paved roads; mountain bike for unpaved roads; gravel for something in-between)
-- [ ] **Helmet** (otherwise you are a *fucking asshole*; invest in a [MIPS helmet](https://en.wikipedia.org/wiki/Multi-directional_Impact_Protection_System) if you value your head)
+- [ ] **Helmet** (otherwise you are a *fucking asshole*; invest in a [MIPS helmet](https://en.wikipedia.org/wiki/Multi-directional_Impact_Protection_System) with a good [rating from Virginia Tech](https://www.helmet.beam.vt.edu/bicycle-helmet-ratings.html) if you value your head)
 - [ ] **Pump** ([Topeak Road Morph G](https://www.topeak.com/global/en/product/246-ROAD-MORPH-G) is compact with a gauge and small foot stand; never bring a [screw-on pump](https://ride.lezyne.com/products/pocket-drive) without a valve core tool!)
 - [ ] **Lock** (you probably spend most of the time in remote areas and on or very close to your bike, so a combination cable lock to deny opportunistic theft is sufficient)
 - [ ] **Front and back lights** (essential for safety in the dark and in tunnels)
@@ -124,6 +124,15 @@ Bringing your bike on boats, trains, buses, ...
 
 TODO: pictures, what to be prepared for?
 
+Camping
+=======
+
+* (Stealth) camping
+* [Welcome To My Garden](https://welcometomygarden.org/explore)
+* [Warmshowers](https://www.warmshowers.org/)
+* Ask land owners for permission
+
+
 Safety on the road
 ==================
 
@@ -153,6 +162,7 @@ Routing services
 🇩🇰 Denmark-specific
 ---------------------
 * [ruter.dk](https://ruter.dk/) for official information about national and EuroVelo cycling routes in Denmark
+* [udinaturen.dk's network of free shelters](https://udinaturen.dk/map-page?scIds=1150,1303,6586&scExtIds=1150,1303,6586&ffId=2468)
 
 🇳🇴 Norway-specific
 --------------------
