@@ -11,7 +11,7 @@ jobs:
       - name: Build
         run: |
           sudo apt-get install pandoc
-          ./build.sh
+          ./build.sh # build HTML files
       - name: Upload
         uses: actions/upload-pages-artifact@v1
         with:
