@@ -9,6 +9,14 @@ The equations on this page are written
 Manifold calculus (?)
 =====================
 
+Metric and inverse metric
+-------------------------
+
+The inverse metric $g^{\mu\nu}$ of a metric $g_{\mu\nu}$ is defined by
+$$
+g^{\mu\rho} g_{\nu\rho} = \delta^\mu_\nu.
+$$
+
 Covariant derivative
 --------------------
 The covariant derivative for a rank $(M,N)$ tensor $T$ is
@@ -32,6 +40,21 @@ $$
 \tag{123}
 $$
 [(123)](#)
+
+Riemann tensor
+--------------
+
+Ricci tensor
+------------
+
+Ricci scalar
+------------
+
+Einstein tensor (common in physics)
+----------------------------------
+$$
+G_{\mu\nu} = R_{\mu\nu} - \frac12 g_{\mu\nu} R
+$$
 
 Variational manifold calculus (?)
 =================================
