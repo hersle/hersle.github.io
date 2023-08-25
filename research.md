@@ -254,3 +254,11 @@ we find that $E^2(a=1)=1$ constrains the parameters by the modified closure cond
 $$
 1 = \tilde{\Omega}_{r0} + \tilde{\Omega}_{m0} + \tilde{\Omega}_{k0} + \tilde{\Omega}_{\Lambda 0} + \tilde{\Omega}_{\phi 0} .
 $$
+
+Weak-field limit
+----------------
+
+Trace-reversed form of the metric field equation:
+$$
+    
+$$

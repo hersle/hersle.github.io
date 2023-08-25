@@ -16,6 +16,18 @@ Most sites where you register your email address *does* care, however.
 This trick is particularly useful for web stores where you get a one-time promotional code after registering,
 without needing to use a 10 min mail thing.
 
+The one Taylor expansion to remember
+====================================
+
+$$
+(1 + x)^n \simeq 1 + nx
+$$
+
+Propagating errors with matrix methods
+======================================
+
+[Matrix methods for error propagation](https://veritas.ucd.ie/~apl/labs_master/docs/2020/DA/Matrix-Methods-for-Error-Propagation.pdf)
+
 Git cheat sheet
 ===============
 
