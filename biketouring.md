@@ -30,7 +30,7 @@ Storage
 
 *Combine what you need*
 
-- [ ] **Back rack and panniers** (boring and balanced classical set-up; [Ortlieb Classic Back Rollers](https://www.ortlieb.com/en_us/back-roller-classic) are beloved; axle-mounted rack like [Bontrager Lightweight MIK BackRack](https://www.trekbikes.com/international/en_IN_TL/equipment/bike-accessories/bike-racks/bontrager-backrack-lightweight-mik-rear-rack/p/27224/) is sturdiest for bikes without eyelets)
+- [ ] **Back rack and panniers** (boring and balanced classical set-up; [Ortlieb Classic Back Rollers](https://www.ortlieb.com/en_us/back-roller-classic) are beloved; axle-mounted rack like [Bontrager Lightweight MIK BackRack](https://www.trekbikes.com/international/en_IN_TL/equipment/bike-accessories/bike-racks/bontrager-backrack-lightweight-mik-rear-rack/p/27224/), [Ortlieb Quick Rack](https://www.ortlieb.com/en_us/quick-rack+F78104) and [Axiom Streamliner Road DLX](https://www.axiomgear.com/products/racks/streamliner-racks/streamliner-road-dlx/) are sturdiest for bikes without eyelets)
 - [ ] **Front rack and panniers** (extension classical set-up for longer tours; increases bike stability; [Ortlieb Sport Rollers Classic](https://www.ortlieb.com/en_us/sport-roller-classic) are beloved)
 - [ ] **Bungee straps** (for securing items (bulky items like tents, or on-demand after shopping) on top of the back rack; doubles as laundry line while biking)
 - [ ] **Frame bag** (good for road/gravel bikes and light touring; full bags like [Revelate Designs Ripio](https://www.revelatedesigns.com/index.cfm/store.catalog/Frame-Bags/Ripio) blocks bottle cages)
@@ -166,7 +166,7 @@ Routing services
 
 🇳🇴 Norway-specific
 --------------------
-* [Yr.no](https://www.yr.no/en) is the [most accurate weather forecasting service in Norway](https://www.yr.no/artikkel/yr.no-vs-storm.no-1.11009369).
+* [Yr](https://www.yr.no/en) is the [most accurate weather forecasting service in Norway](https://www.yr.no/artikkel/yr.no-vs-storm.no-1.11009369).
 * [Cycletourer.co.uk's map of tunnels](https://www.cycletourer.co.uk/maps/tunnelmaplrge.shtml).
 * [Entur.no](https://entur.no/kart) is an official source for all public transport timetables, including buses, trains and ferries.
 * [SykkelNorge](https://sykkelnorge.no/)'s recommended tours up to around 1000 km.
@@ -174,3 +174,7 @@ Routing services
 * [Lars Erik Sira's blog](https://sirasverden.no/) and [advice](https://sirasverden.no/sykkelrad) for touring in Norway (in Norwegian).
 * [plohn.com](https://plohn.com/)
 * [kartmannen.no](https://kartmannen.no/kartutskrift/) for printing Norwegian maps as PDFs.
+
+🇸🇪 Sweden-specific
+--------------------
+* [Vindskyddskartan](https://vindskyddskartan.se/en/) is a map of shelters.
