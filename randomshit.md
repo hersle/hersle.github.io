@@ -87,3 +87,12 @@ git push remote_name branch_name      #   upload           changes on       a br
 git push remote_name                  #   upload           changes on current branch   to   a remote repo
 git push                              #   upload           changes on current branch   to the remote repo
 ```
+
+GitHub personal access token authentication
+-------------------------------------------
+I always forget [how to do this shit](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line):
+```
+$ git push
+Username: hersle
+Password: ghp_...
+```
