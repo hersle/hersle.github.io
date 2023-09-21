@@ -88,6 +88,21 @@ git push remote_name                  #   upload           changes on current br
 git push                              #   upload           changes on current branch   to the remote repo
 ```
 
+Modify last commit
+------------------
+```
+git add change1 change2 ...
+git commit --amend
+```
+
+Modify previous (not last) commit
+---------------------------------
+```
+git add change1 change2 ...
+git commit --fixup=OLDCOMMIT
+git rebase --interactive --autosquash OLDCOMMIT~
+```
+
 GitHub personal access token authentication
 -------------------------------------------
 I always forget [how to do this shit](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line):

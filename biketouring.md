@@ -127,7 +127,7 @@ TODO: pictures, what to be prepared for?
 Camping
 =======
 
-* (Stealth) camping
+* (Stealth) camping: look at satellite photos, or search for "picnic table", "shelter" or something similar in OSMAnd
 * [Welcome To My Garden](https://welcometomygarden.org/explore)
 * [Warmshowers](https://www.warmshowers.org/)
 * Ask land owners for permission
