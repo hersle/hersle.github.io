@@ -132,6 +132,14 @@ Camping
 * [Warmshowers](https://www.warmshowers.org/)
 * Ask land owners for permission
 
+Maintenance on the road
+=======================
+
+Screw             Turn in (CW)          Turn out (CCW)
+----------------- -------------------   --------------------
+Rear derailleur H To lower gears        To higher gears
+Rear derailleur L                     
+Barrel adjusters  Decrease wire tension Increase wire tension
 
 Safety on the road
 ==================

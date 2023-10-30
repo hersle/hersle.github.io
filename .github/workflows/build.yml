@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Build
         run: |
-          wget https://github.com/jgm/pandoc/releases/download/3.1.8/pandoc-3.1.8-linux-amd64.tar.gz -O pandoc.tar.gz # download
+          wget https://github.com/jgm/pandoc/releases/download/3.1.8/pandoc-3.1.8-linux-amd64.tar.gz -O pandoc.tar.gz # download pandoc
           tar xvzf pandoc.tar.gz --strip-components 1 -C . # install pandoc executable to bin/pandoc
           ./build.sh # build HTML files
       - name: Upload
