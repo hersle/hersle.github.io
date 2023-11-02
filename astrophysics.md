@@ -79,3 +79,8 @@ occurs whenever a *charged* field has a nonzero vacuum expectation value
 ## Hawking radiation
 
 [Hawking radiation calculator for Schwarzschild black holes](https://www.vttoth.com/CMS/physics-notes/311-hawking-radiation-calculator)
+
+## N-body simulations
+
+* [Web-based interactive demo](https://florian.mounier.dev/annealation/)
+* [N-body choreographies](https://dangries.com/rectangleworld/demos/nBody/)
