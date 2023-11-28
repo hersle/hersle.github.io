@@ -84,3 +84,17 @@ occurs whenever a *charged* field has a nonzero vacuum expectation value
 
 * [Web-based interactive demo](https://florian.mounier.dev/annealation/)
 * [N-body choreographies](https://dangries.com/rectangleworld/demos/nBody/)
+
+## Matter evolution and growth factor
+
+In some limit(s), matter evolves under the **growth equation**
+$$ \ddot{\delta}_m(\boldsymbol{k},t) + 2H(t) \dot{\delta}_m(\boldsymbol{k},t) - 4 \pi G \bar{\rho}_m(t) \delta_m(\boldsymbol{k},t) = 0. $$
+Solve this for $\delta_m(\boldsymbol{k},t)$ and define the **growth factor** $D(\boldsymbol{k},t)=\delta_m(\boldsymbol{k},t)/\delta_m(\boldsymbol{k},t_0)$ relative to today.
+
+In a matter-dominated universe with $\Omega_m = 1$ and $H = H_0 \, a^{-3/2}$,
+the ansatz $\delta_m(\boldsymbol{k},a) = C a^n$ gives the general analytical solution
+$$ \delta(\boldsymbol{k},a) = \delta_+(\boldsymbol{k},a) + \delta_m(\boldsymbol{k},a) = C_+ \, a^1 + C_- \, a^{-3/2} .$$
+Discarding the decaying mode $\delta_-$,
+we find $\dot{\delta}_+ = H \delta_+$.
+To solve the full equation,
+one can start *in the matter-dominated era* and use these analytical relations for initial conditions.
