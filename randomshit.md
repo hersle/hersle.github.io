@@ -108,6 +108,6 @@ GitHub personal access token authentication
 I always forget [how to do this shit](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line):
 ```
 $ git push
-Username: hersle
-Password: ghp_...
+Username: ghp_...
+Password:
 ```
