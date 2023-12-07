@@ -98,3 +98,18 @@ Discarding the decaying mode $\delta_-$,
 we find $\dot{\delta}_+ = H \delta_+$.
 To solve the full equation,
 one can start *in the matter-dominated era* and use these analytical relations for initial conditions.
+
+## Continuity equations for perfect fluid in GR
+
+* Continuity equation $\nabla_\mu T^{\mu\nu} = 0$.
+* Assume $i \boldsymbol{k} \times \boldsymbol{v} \implies \boldsymbol{k} \,\|\, \boldsymbol{v} \implies \boldsymbol{k}/k = \boldsymbol{v}/v$.
+* Equation of state $\bar{P} = w \bar\rho$.
+* Speed of sound $c_s^2 = \delta P / \delta \rho$.
+* If adiabatic, $w = c_s^2$.
+
+Background:
+$$ \dot{\bar\rho} = -3H(1+w)\bar\rho $$
+
+Perturbations:
+$$ \dot{\delta} = 3H(w-c_s^2)\delta - (1+w) (ikva^{-1} - 3\dot\Phi)$$
+$$ \dot{(av)} = -ik \left( \frac{c_s^2}{w+1} \delta + \Psi\right) + 3w\dot{a}v$$
