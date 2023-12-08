@@ -111,5 +111,5 @@ Background:
 $$ \dot{\bar\rho} = -3H(1+w)\bar\rho $$
 
 Perturbations:
-$$ \dot{\delta} = 3H(w-c_s^2)\delta - (1+w) (ikva^{-1} - 3\dot\Phi)$$
+$$ \dot{\delta} = 3H(w-c_s^2)\delta - (1+w) (ikva^{-1} + 3\dot\Phi)$$
 $$ \dot{(av)} = -ik \left( \frac{c_s^2}{w+1} \delta + \Psi\right) + 3w\dot{a}v$$
