@@ -141,6 +141,8 @@ Rear derailleur H To lower gears        To higher gears
 Rear derailleur L                     
 Barrel adjusters  Decrease wire tension Increase wire tension
 
+[Handlebar tape wrapping guide](https://www.youtube.com/watch?v=c8FyZWpUvFM)
+
 Safety on the road
 ==================
 
