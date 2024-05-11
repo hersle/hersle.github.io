@@ -85,6 +85,10 @@ occurs whenever a *charged* field has a nonzero vacuum expectation value
 * [Web-based interactive demo](https://florian.mounier.dev/annealation/)
 * [N-body choreographies](https://dangries.com/rectangleworld/demos/nBody/)
 
+## Shot noise
+
+TODO
+
 ## Matter evolution and growth factor
 
 In some limit(s), matter evolves under the **growth equation**

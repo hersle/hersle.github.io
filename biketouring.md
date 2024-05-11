@@ -132,8 +132,8 @@ Camping
 * [Warmshowers](https://www.warmshowers.org/)
 * Ask land owners for permission
 
-Maintenance on the road
-=======================
+Maintenance
+===========
 
 Screw             Turn in (CW)          Turn out (CCW)
 ----------------- -------------------   --------------------
@@ -141,7 +141,10 @@ Rear derailleur H To lower gears        To higher gears
 Rear derailleur L                     
 Barrel adjusters  Decrease wire tension Increase wire tension
 
-[Handlebar tape wrapping guide](https://www.youtube.com/watch?v=c8FyZWpUvFM)
+* [Handlebar tape wrapping guide](https://www.youtube.com/watch?v=c8FyZWpUvFM)
+* [Hub bearings service](https://youtu.be/opommURFB4o)
+* [Split quick link without tools](https://youtube.com/shorts/wAYtyczXGE0)
+* [Shimano chain pin installation](https://www.youtube.com/watch?v=j6nPCvFjpms)
 
 Safety on the road
 ==================
