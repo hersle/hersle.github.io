@@ -141,10 +141,12 @@ Rear derailleur H To lower gears        To higher gears
 Rear derailleur L                     
 Barrel adjusters  Decrease wire tension Increase wire tension
 
+* [MadeGoodBike's very clear maintenance videos](https://www.youtube.com/@MadeGoodFilms/playlists)
 * [Handlebar tape wrapping guide](https://www.youtube.com/watch?v=c8FyZWpUvFM)
 * [Hub bearings service](https://youtu.be/opommURFB4o)
 * [Split quick link without tools](https://youtube.com/shorts/wAYtyczXGE0)
 * [Shimano chain pin installation](https://www.youtube.com/watch?v=j6nPCvFjpms)
+* [How barrel adjusters work](https://www.youtube.com/watch?v=w7UUvRMLK3o)
 
 Safety on the road
 ==================
